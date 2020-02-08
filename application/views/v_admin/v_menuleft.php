@@ -12,35 +12,20 @@
                             <a title="Dashboard" href="<?php echo base_url('index.php/admin/index'); ?>" aria-expanded="false"><span class="educate-icon educate-home icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Dashboard</span></a>
                         </li>
                         <li>
-                            <a title="KBLI" href="events.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">KBLI</span></a>
-                        </li>
-                        <li>
-
-                            <a class="has-arrow" href="index.html">
-								   <span class="educate-icon educate-home icon-wrap"></span>
-								   <span class="mini-click-non">Education</span>
-								</a>
-                            <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard v.1" href="index.html"><span class="mini-sub-pro">Dashboard v.1</span></a></li>
-                                <li><a title="Dashboard v.2" href="index-1.html"><span class="mini-sub-pro">Dashboard v.2</span></a></li>
-                                <li><a title="Dashboard v.3" href="index-2.html"><span class="mini-sub-pro">Dashboard v.3</span></a></li>
-                                <li><a title="Analytics" href="analytics.html"><span class="mini-sub-pro">Analytics</span></a></li>
-                                <li><a title="Widgets" href="widgets.html"><span class="mini-sub-pro">Widgets</span></a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a title="Landing Page" href="events.html" aria-expanded="false"><span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true"></span> <span class="mini-click-non">Event</span></a>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Professors</span></a>
+                            <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Kategori KBLI</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Professors" href="all-professors.html"><span class="mini-sub-pro">All Professors</span></a></li>
-                                <li><a title="Add Professor" href="add-professor.html"><span class="mini-sub-pro">Add Professor</span></a></li>
-                                <li><a title="Edit Professor" href="edit-professor.html"><span class="mini-sub-pro">Edit Professor</span></a></li>
-                                <li><a title="Professor Profile" href="professor-profile.html"><span class="mini-sub-pro">Professor Profile</span></a></li>
+                                <li><a title="Tambah Kategori" href="all-professors.html"><span class="mini-sub-pro">Tambah Kategori</span></a></li>
+                                <li><a title="Table Kategori" href="add-professor.html"><span class="mini-sub-pro">Tabel Kategori</span></a></li>
                             </ul>
                         </li>
                         <li>
+                            <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Admin</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="Tambah Admin" href="all-professors.html"><span class="mini-sub-pro">Tambah Admin</span></a></li>
+                                <li><a title="Table Admin" href="add-professor.html"><span class="mini-sub-pro">Tabel Admin</span></a></li>
+                            </ul>
+                        </li>
+                        <!-- <li>
                             <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="All Students" href="all-students.html"><span class="mini-sub-pro">All Students</span></a></li>
@@ -147,7 +132,7 @@
                                 <li><a title="404 Page" href="404.html"><span class="mini-sub-pro">404 Page</span></a></li>
                                 <li><a title="500 Page" href="500.html"><span class="mini-sub-pro">500 Page</span></a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
             </div>

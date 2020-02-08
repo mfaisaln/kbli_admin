@@ -5,30 +5,22 @@
                             <div class="mobile-menu">
                                 <nav id="dropdown">
                                     <ul class="mobile-menu-nav">
-                                        <li><a href="events.html">Dashboard</a></li>
-                                        <li><a data-toggle="collapse" data-target="#Charts" href="#">Home <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <li><a href="<?php echo base_url('index.php/admin/index'); ?>">Dashboard</a></li>
+                                        <li><a data-toggle="collapse" data-target="#Charts" href="#">Kategori KBLI <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul class="collapse dropdown-header-top">
-                                                <li><a href="index.html">Dashboard v.1</a></li>
-                                                <li><a href="index-1.html">Dashboard v.2</a></li>
-                                                <li><a href="index-3.html">Dashboard v.3</a></li>
-                                                <li><a href="analytics.html">Analytics</a></li>
-                                                <li><a href="widgets.html">Widgets</a></li>
+                                                <li><a href="index.html">Tambah Kategori</a></li>
+                                                <li><a href="index-1.html">Table Kategori</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="events.html">Event</a></li>
-                                        <li><a data-toggle="collapse" data-target="#demoevent" href="#">Professors <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <li><a data-toggle="collapse" data-target="#demoevent" href="#">Admin <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demoevent" class="collapse dropdown-header-top">
-                                                <li><a href="all-professors.html">All Professors</a>
+                                                <li><a href="all-professors.html">Tambah Admin</a>
                                                 </li>
-                                                <li><a href="add-professor.html">Add Professor</a>
-                                                </li>
-                                                <li><a href="edit-professor.html">Edit Professor</a>
-                                                </li>
-                                                <li><a href="professor-profile.html">Professor Profile</a>
+                                                <li><a href="add-professor.html">Table Admin</a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><a data-toggle="collapse" data-target="#demopro" href="#">Students <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <!-- <li><a data-toggle="collapse" data-target="#demopro" href="#">Students <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demopro" class="collapse dropdown-header-top">
                                                 <li><a href="all-students.html">All Students</a>
                                                 </li>
@@ -175,7 +167,7 @@
                                                 <li><a href="404.html">404 Page</a></li>
                                                 <li><a href="500.html">500 Page</a></li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </nav>
                             </div>
