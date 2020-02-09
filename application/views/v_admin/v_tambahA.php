@@ -165,7 +165,7 @@
                                                     <td>
                                                         <a href='#' class='btn btn-danger'><i class='fa fa-times edu-danger-error' aria-hidden='true'></i></a>
                                                         <a href='#' class='btn btn-danger'><i class='fa fa-times edu-danger-error' aria-hidden='true'></i></a>
-                                                        <a href='#' class='btn btn-danger'><i class='fa fa-times edu-danger-error' aria-hidden='true'></i></a>
+                                                        <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-times edu-danger-error' aria-hidden='true'></i></a>
                                                     </td>
                                                     </tr>";
                                                     }

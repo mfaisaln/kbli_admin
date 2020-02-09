@@ -17,4 +17,8 @@ class M_admin extends CI_Model{
         // $this->db->insert('user', $data); // Untuk mengeksekusi perintah insert data
         $this->db->query("INSERT INTO user VALUES('','$username','$password','$nama','$level','$blokir')");
     }
+    public function delete($id){
+        $this->db->where('id', $id);
+        $this->db->delete('user'); // Untuk mengeksekusi perintah delete data
+      }
 }

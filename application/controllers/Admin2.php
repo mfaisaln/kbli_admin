@@ -12,13 +12,18 @@ class Admin2 extends CI_Controller{
     }
     function tambah(){
             $username=$this->input->post('username');
-            $password=$this->input->post(md5('password'));
+            $password=md5($this->input->post('password'));
             $nama=$this->input->post('nama');
             $level=$this->input->post('level');
             $blokir=1;
             
             $this->m_admin->save($username,$password,$nama,$level,$blokir); // Panggil fungsi save() yang ada di SiswaModel.php
             $data['user'] = $this->m_admin->view();
-		    $this->load->view('v_admin/v_tambahA', $data);
+		        $this->load->view('v_admin/v_tambahA', $data);
       }
+    public function hapus($id){
+      $this->m_admin->delete($id); // Panggil fungsi delete() yang ada di SiswaModel.php
+      $data['user'] = $this->m_admin->view();
+		  $this->load->view('v_admin/v_tambahA', $data);
+    }
 }
