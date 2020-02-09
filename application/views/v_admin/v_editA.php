@@ -76,7 +76,6 @@
                         <div class="product-payment-inner-st">
                             <ul id="myTabedu1" class="tab-review-design">
                                 <li class="active"><a href="#description"> Tambah Admin</a></li>
-                                <li><a href="#reviews"> Tabel Admin</a></li>
                             </ul>
                             <div id="myTabContent" class="tab-content custom-product-edit">
                                 <div class="product-tab-list tab-pane fade active in" id="description">
@@ -85,19 +84,24 @@
                                             <div class="review-content-section">
                                                 <div class="row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                    
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/ubah'); ?>" class="acount-infor">
+                                                        <?php foreach($user as $data){?>
                                                             <div class="devit-card-custom">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="form-control" name="nama" placeholder="Nama">
+                                                            <div class="form-group">
+                                                                    <input type="text" class="form-control" name="id" placeholder="Id" value="<?php echo $data->id ?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="username" type="text" class="form-control" placeholder="Username">
+                                                                    <input type="text" class="form-control" name="nama" placeholder="Nama" value="<?php echo $data->nama ?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="password" type="password" class="form-control" placeholder="Password">
+                                                                    <input name="username" type="text" class="form-control" placeholder="Username" value="<?php echo $data->username ?>">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <select name="level" class="form-control">
+                                                                    <input name="password" type="password" class="form-control" placeholder="Password" value="<?php echo (md5($data->password)) ?>">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select name="level" class="form-control" value="<?php echo $data->level ?>">
 																			<option value="none" selected="" disabled="">Pilih Level</option>
 																			<option value="1">Admin</option>
 																			<option value="0">Pegawai</option>
@@ -105,81 +109,14 @@
                                                                 </div>
                                                                 <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
                                                             </div>
+                                                            <?php } ?>
                                                         </form>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product-tab-list tab-pane fade" id="reviews">
-                                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="sparkline13-list">
-                            
-                            <div class="sparkline13-graph">
-                                <div class="datatable-dashv1-list custom-datatable-overright">
-                                    <div id="toolbar">
-                                        <select class="form-control dt-tb">
-											<option value="">Export Basic</option>
-											<option value="all">Export All</option>
-											<option value="selected">Export Selected</option>
-										</select>
-                                    </div>
-                                    <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
-                                        data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
-                                        <thead>
-                                            <tr>
-                                                <th data-field="state" data-checkbox="true"></th>
-                                                <th data-field="id">No</th>
-                                                <th data-field="nama" >Nama</th>
-                                                <th data-field="username" >Username</th>
-                                                <th data-field="level" >Level</th>
-                                                <th data-field="status" >Status</th>
-                                                <th data-field="action">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
-                                            $i =1;
-                                                if( ! empty($user)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
-                                                    
-                                                    foreach($user as $data){
-                                                    if ($data->level==1) {
-                                                        $lvl="admin";
-                                                    } else {
-                                                        $lvl="pegawai";
-                                                    }
-                                                    if ($data->blokir==1) {
-                                                        $bl="aktif";
-                                                    } else {
-                                                        $bl="blokir";
-                                                    }
-                                                    echo "<tr>
-                                                    <td>".$data->id."</td>
-                                                    <td>".$i++."</td>
-                                                    <td>".$data->nama."</td>
-                                                    <td>".$data->username."</td>
-                                                    <td>".$lvl."</td>
-                                                    <td>".$bl."</td>
-                                                    <td>
-                                                        <a href='#' class='btn btn-warning'><i class='fa fa-ban ' aria-hidden='true'></i></a>
-                                                        <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                        <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
-                                                    </td>
-                                                    </tr>";
-                                                    }
-                                                }else{ // Jika data siswa kosong
-                                                    echo "<tr><td align='center' colspan='7'>Data Tidak Ada</td></tr>";
-                                                }
-                                            ?>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                                 </div>
                             </div>
                         </div>
