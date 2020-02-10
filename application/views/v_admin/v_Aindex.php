@@ -1,5 +1,21 @@
+
 <!doctype html>
 <html class="no-js" lang="en">
+<?php
+    foreach($user as $data){
+        $level =$data->level;
+        $blokir =$data->blokir;
+    }
+if ($blokir==1) {
+
+
+    $data_session = array(
+        'level' => $level,
+        'blokir' => $blokir
+        );
+    $this->session->set_userdata($data_session);
+
+?>
 
 <?php $this->load->view('header');?> 
 
@@ -632,3 +648,9 @@
 </body>
 
 </html>
+<?php
+
+} else {
+    redirect(base_url('index.php/Login/logout'));
+}
+?>

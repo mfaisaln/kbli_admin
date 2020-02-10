@@ -152,17 +152,37 @@
                                                                         } else {
                                                                             $bl="blokir";
                                                                         }
-                                                                        echo "<tr>
+                                                                
+                                                                        echo 
+                                                                        "<tr>
                                                                         <td>".$data->id."</td>
                                                                         <td>".$i++."</td>
                                                                         <td>".$data->nama."</td>
                                                                         <td>".$data->username."</td>
                                                                         <td>".$lvl."</td>
                                                                         <td>".$bl."</td>
-                                                                        <td>
-                                                                            <a href='#' class='btn btn-warning'><i class='fa fa-ban ' aria-hidden='true'></i></a>
-                                                                            <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                            <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                        <td>";
+                                                                        if ($this->session->userdata("level")==1) {
+                                                                            if ($data->blokir==1) {
+                                                                                echo
+                                                                                    "<a href='".base_url("index.php/Admin2/blok2/".$data->id)."' class='btn btn-warning'><i class='fa fa-ban ' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                                    ";
+                                                                            } else {
+                                                                                echo
+                                                                                    "<a href='".base_url("index.php/Admin2/blok/".$data->id)."' class='btn btn-success'><i class='fa  fa-check ' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                                    ";
+                                                                            }
+                                                                            
+                                                                            
+                                                                        } else {
+                                                                            // echo "<a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                            // <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>";
+                                                                        }
+                                                                        echo"
                                                                         </td>
                                                                         </tr>";
                                                                         }

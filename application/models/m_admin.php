@@ -25,6 +25,7 @@ class M_admin extends CI_Model{
         $this->db->where('id', $id);
         $this->db->update('user', $data); // Untuk mengeksekusi perintah update data
       }
+      
       public function ubah($where){
         return $this->db->get_where('user',$where)->result();
       }
