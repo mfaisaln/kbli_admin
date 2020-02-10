@@ -15,7 +15,7 @@
                             <a class="has-arrow" href="all-professors.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Kategori KBLI</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="Tambah Kategori" href="<?php echo base_url('index.php/Kategori/index'); ?>"><span class="mini-sub-pro">Tambah Kategori</span></a></li>
-                                <li><a title="Table Kategori" href="add-professor.html"><span class="mini-sub-pro">Tabel Kategori</span></a></li>
+                                <li><a title="Table Kategori" href="<?php echo base_url('index.php/Kategori/view'); ?>"><span class="mini-sub-pro">Tabel Kategori</span></a></li>
                             </ul>
                         </li>
                         

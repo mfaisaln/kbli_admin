@@ -54,7 +54,7 @@
                                         <ul class="breadcome-menu">
                                             <li><a href="#">Home</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">Admin</span>
+                                            <li><span class="bread-blod">Kategori</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -72,11 +72,14 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="product-payment-inner-st">
                             <ul id="myTabedu1" class="tab-review-design">
-                                <li class="active"><a href="#description"> Tambah Admin</a></li>
-                                <li><a href="#reviews"> Tabel Admin</a></li>
+                                <li class="active"><a href="#t1"> Tambah Kategori</a></li>
+                                <li><a href="#t2"> Tambah Golongan Pokok</a></li>
+                                <li><a href="#t3"> Tambah Golongan</a></li>
+                                <li><a href="#t4"> Tambah Sub Golongan</a></li>
+                                <li><a href="#t5"> Tambah Kelompok</a></li>
                             </ul>
                             <div id="myTabContent" class="tab-content custom-product-edit">
-                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                <div class="product-tab-list tab-pane fade active in" id="t1">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
@@ -85,21 +88,12 @@
                                                         <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="nama" placeholder="Nama">
+                                                                    <input type="text" class="form-control" name="judul_kategori" placeholder="judul_kategori">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="username" type="text" class="form-control" placeholder="Username">
+                                                                    <input name="deskripsi_kategori" type="text" class="form-control" placeholder="deskripsi_kategori">
                                                                 </div>
-                                                                <div class="form-group">
-                                                                    <input name="password" type="password" class="form-control" placeholder="Password">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <select name="level" class="form-control">
-																			<option value="none" selected="" disabled="">Pilih Level</option>
-																			<option value="1">Admin</option>
-																			<option value="0">Pegawai</option>
-																		</select>
-                                                                </div>
+                                                                
                                                                 <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
                                                             </div>
                                                         </form>
@@ -109,95 +103,131 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-tab-list tab-pane fade" id="reviews">
+                                <div class="product-tab-list tab-pane fade  in" id="t2">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="sparkline13-list">
-                                                
-                                                <div class="sparkline13-graph">
-                                                    <div class="datatable-dashv1-list custom-datatable-overright">
-                                                        <div id="toolbar">
-                                                            <select class="form-control dt-tb">
-                                                                <option value="">Export Basic</option>
-                                                                <option value="all">Export All</option>
-                                                                <option value="selected">Export Selected</option>
-                                                            </select>
-                                                        </div>
-                                                        <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
-                                                            data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th data-field="state" data-checkbox="true"></th>
-                                                                    <th data-field="id">No</th>
-                                                                    <th data-field="nama" >Nama</th>
-                                                                    <th data-field="username" >Username</th>
-                                                                    <th data-field="level" >Level</th>
-                                                                    <th data-field="status" >Status</th>
-                                                                    <th data-field="action">Action</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <?php
-                                                                $i =1;
-                                                                    if( ! empty($user)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
-                                                                        
-                                                                        foreach($user as $data){
-                                                                        if ($data->level==1) {
-                                                                            $lvl="admin";
-                                                                        } else {
-                                                                            $lvl="pegawai";
-                                                                        }
-                                                                        if ($data->blokir==1) {
-                                                                            $bl="aktif";
-                                                                        } else {
-                                                                            $bl="blokir";
-                                                                        }
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                            <div class="devit-card-custom">
+                                                                <div class="form-group">
+                                                                    <select name="level" class="form-control">
+																			<option value="none" selected="" disabled="">Pilih Katgori</option>
+																			<option value="1">Admin</option>
+																			<option value="0">Pegawai</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" name="judul_golonganpokok" placeholder="judul_golonganpokok">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="deskripsi_golonganpokok" type="text" class="form-control" placeholder="deskripsi_golonganpokok">
+                                                                </div>
                                                                 
-                                                                        echo 
-                                                                        "<tr>
-                                                                        <td>".$data->id."</td>
-                                                                        <td>".$i++."</td>
-                                                                        <td>".$data->nama."</td>
-                                                                        <td>".$data->username."</td>
-                                                                        <td>".$lvl."</td>
-                                                                        <td>".$bl."</td>
-                                                                        <td>";
-                                                                        if ($this->session->userdata("level")==1) {
-                                                                            if ($data->blokir==1) {
-                                                                                echo
-                                                                                    "<a href='".base_url("index.php/Admin2/blok2/".$data->id)."' class='btn btn-warning'><i class='fa fa-ban ' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
-                                                                                    ";
-                                                                            } else {
-                                                                                echo
-                                                                                    "<a href='".base_url("index.php/Admin2/blok/".$data->id)."' class='btn btn-success'><i class='fa  fa-check ' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
-                                                                                    ";
-                                                                            }
-                                                                            
-                                                                            
-                                                                        } else {
-                                                                            // echo "<a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                            // <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>";
-                                                                        }
-                                                                        echo"
-                                                                        </td>
-                                                                        </tr>";
-                                                                        }
-                                                                    }else{ // Jika data siswa kosong
-                                                                        echo "<tr><td align='center' colspan='7'>Data Tidak Ada</td></tr>";
-                                                                    }
-                                                                ?>
-                                                            </tbody>
-                                                        </table>
+                                                                <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
+                                                            </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="product-tab-list tab-pane fade  in" id="t3">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                            <div class="devit-card-custom">
+                                                                <div class="form-group">
+                                                                    <select name="level" class="form-control">
+																			<option value="none" selected="" disabled="">Pilih golongan pokok</option>
+																			<option value="1">Admin</option>
+																			<option value="0">Pegawai</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" name="judul_golongan" placeholder="judul_golongan">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="deskripsi_golongank" type="text" class="form-control" placeholder="deskripsi_golongan">
+                                                                </div>
+                                                                
+                                                                <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-tab-list tab-pane fade  in" id="t4">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                            <div class="devit-card-custom">
+                                                                <div class="form-group">
+                                                                    <select name="level" class="form-control">
+																			<option value="none" selected="" disabled="">Pilih Golongan</option>
+																			<option value="1">Admin</option>
+																			<option value="0">Pegawai</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" name="judul_subgolongan" placeholder="judul_subgolongan">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="deskripsi_subgolongan" type="text" class="form-control" placeholder="deskripsi_subgolongan">
+                                                                </div>
+                                                                
+                                                                <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-tab-list tab-pane fade  in" id="t5">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                            <div class="devit-card-custom">
+                                                                <div class="form-group">
+                                                                    <select name="level" class="form-control">
+																			<option value="none" selected="" disabled="">Pilih sub golongan</option>
+																			<option value="1">Admin</option>
+																			<option value="0">Pegawai</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" name="judul_kelompok" placeholder="judul_kelompok">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input name="deskripsi_kelompok" type="text" class="form-control" placeholder="deskripsi_kelompok">
+                                                                </div>
+                                                                
+                                                                <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
