@@ -18,12 +18,9 @@
                                 <li><a title="Table Kategori" href="add-professor.html"><span class="mini-sub-pro">Tabel Kategori</span></a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a class="has-arrow" href="<?php echo base_url('index.php/Kategori/index'); ?>" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Admin</span></a>
-                            <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Tambah Admin" href="<?php echo base_url('index.php/Admin2/index'); ?>"><span class="mini-sub-pro">Tambah Admin</span></a></li>
-                                <li><a title="Table Admin" href="add-professor.html"><span class="mini-sub-pro">Tabel Admin</span></a></li>
-                            </ul>
+                        
+                        <li >
+                            <a title="Dashboard" href="<?php echo base_url('index.php/Admin2/index'); ?>" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap" aria-hidden="true"></span> <span class="mini-click-non">Admin</span></a>
                         </li>
                         <!-- <li>
                             <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>

@@ -47,17 +47,17 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <div class="breadcome-heading">
-                                            <form role="search" class="sr-input-func">
+                                            <!-- <form role="search" class="sr-input-func">
                                                 <input type="text" placeholder="Search..." class="search-int form-control">
                                                 <a href="#"><i class="fa fa-search"></i></a>
-                                            </form>
+                                            </form> -->
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <ul class="breadcome-menu">
                                             <li><a href="#">Home</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">Tambah Admin</span>
+                                            <li><span class="bread-blod">Admin</span>
                                             </li>
                                         </ul>
                                     </div>
