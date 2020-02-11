@@ -85,8 +85,11 @@
                                             <div class="review-content-section">
                                                 <div class="row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahKate'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" name="kode_kategori" placeholder="kode_kategori">
+                                                                </div>
                                                                 <div class="form-group">
                                                                     <input type="text" class="form-control" name="judul_kategori" placeholder="judul_kategori">
                                                                 </div>
@@ -109,13 +112,28 @@
                                             <div class="review-content-section">
                                                 <div class="row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahgolpok'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <select name="level" class="form-control">
-																			<option value="none" selected="" disabled="">Pilih Katgori</option>
-																			<option value="1">Admin</option>
-																			<option value="0">Pegawai</option>
+                                                                    <input type="text" class="form-control" name="kode_golonganpokok" placeholder="kode_golonganpokok">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select name="kode_kategori" class="form-control">
+                                                                            <option value="none" selected="" disabled="">Pilih Katgori</option>
+                                                                            <?php
+                                                                                if( ! empty($kategori)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
+                                                                                    
+                                                                                    foreach($kategori as $data){
+                                                                            
+                                                                                    echo 
+                                                                                    "<option value='".$data->kode_kategori."'>".$data->kode_kategori."</option>";
+                                                                                    }
+                                                                                }else{ 
+
+                                                                                }
+                                                                            ?>
+																			<!-- <option value="1">Admin</option>
+																			<option value="0">Pegawai</option> -->
 																		</select>
                                                                 </div>
                                                                 <div class="form-group">
@@ -140,20 +158,34 @@
                                             <div class="review-content-section">
                                                 <div class="row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahgol'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <select name="level" class="form-control">
+                                                                    <input type="text" class="form-control" name="kode_golongan" placeholder="kode_golongan">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select name="kode_golonganpokok" class="form-control">
 																			<option value="none" selected="" disabled="">Pilih golongan pokok</option>
-																			<option value="1">Admin</option>
-																			<option value="0">Pegawai</option>
+																			<?php
+                                                                                if( ! empty($golPok)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
+                                                                                    
+                                                                                    foreach($golPok as $data1){
+                                                                            
+                                                                                    echo 
+                                                                                    "<option value='".$data1->kode_golonganpokok."'>".$data1->kode_golonganpokok."</option>";
+                                                                                    }
+                                                                                }else{ 
+
+                                                                                }
+                                                                            ?>
+																			
 																		</select>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <input type="text" class="form-control" name="judul_golongan" placeholder="judul_golongan">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="deskripsi_golongank" type="text" class="form-control" placeholder="deskripsi_golongan">
+                                                                    <input name="deskripsi_golongan" type="text" class="form-control" placeholder="deskripsi_golongan">
                                                                 </div>
                                                                 
                                                                 <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
@@ -171,13 +203,26 @@
                                             <div class="review-content-section">
                                                 <div class="row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahSubgol'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <select name="level" class="form-control">
+                                                                    <input type="text" class="form-control" name="kode_subgolongan" placeholder="kode_subgolongan">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select name="kode_golongan" class="form-control">
 																			<option value="none" selected="" disabled="">Pilih Golongan</option>
-																			<option value="1">Admin</option>
-																			<option value="0">Pegawai</option>
+																			<?php
+                                                                                if( ! empty($gol)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
+                                                                                    
+                                                                                    foreach($gol as $data2){
+                                                                            
+                                                                                    echo 
+                                                                                    "<option value='".$data2->kode_golongan."'>".$data2->kode_golongan."</option>";
+                                                                                    }
+                                                                                }else{ 
+
+                                                                                }
+                                                                            ?>
 																		</select>
                                                                 </div>
                                                                 <div class="form-group">
@@ -202,13 +247,26 @@
                                             <div class="review-content-section">
                                                 <div class="row">
                                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahKel'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <select name="level" class="form-control">
+                                                                    <input type="text" class="form-control" name="kode_kelompok" placeholder="kode_kelompok">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select name="kode_subgolongan" class="form-control">
 																			<option value="none" selected="" disabled="">Pilih sub golongan</option>
-																			<option value="1">Admin</option>
-																			<option value="0">Pegawai</option>
+																			<?php
+                                                                                if( ! empty($subGol)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
+                                                                                    
+                                                                                    foreach($subGol as $data3){
+                                                                            
+                                                                                    echo 
+                                                                                    "<option value='".$data3->kode_subgolongan."'>".$data3->kode_subgolongan."</option>";
+                                                                                    }
+                                                                                }else{ 
+
+                                                                                }
+                                                                            ?>
 																		</select>
                                                                 </div>
                                                                 <div class="form-group">

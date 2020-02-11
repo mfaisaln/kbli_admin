@@ -17,7 +17,21 @@ class M_kategori extends CI_Model{
       public function viewKel(){
         return $this->db->get('kelompok')->result();
       }
-      
+      public function saveKate($db,$data){
+        $this->db->insert($db, $data);
+      }
+      public function saveGolpok($db,$data){
+        $this->db->insert($db, $data);
+      }
+      public function saveGol($db,$data){
+        $this->db->insert($db, $data);
+      }
+      public function saveSubgol($db,$data){
+        $this->db->insert($db, $data);
+      }
+      public function saveKel($db,$data){
+        $this->db->insert($db, $data);
+      }
     // public function save($username,$password,$nama,$level,$blokir){
         
     //     // $this->db->insert('user', $data); // Untuk mengeksekusi perintah insert data

@@ -127,7 +127,7 @@
                                                             data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                                             <thead>
                                                                 <tr>
-                                                                    <th data-field="state" data-checkbox="true"></th>
+                                                                    
                                                                     <th data-field="id">No</th>
                                                                     <th data-field="nama" >Nama</th>
                                                                     <th data-field="username" >Username</th>
@@ -155,7 +155,7 @@
                                                                 
                                                                         echo 
                                                                         "<tr>
-                                                                        <td>".$data->id."</td>
+                                                                        
                                                                         <td>".$i++."</td>
                                                                         <td>".$data->nama."</td>
                                                                         <td>".$data->username."</td>

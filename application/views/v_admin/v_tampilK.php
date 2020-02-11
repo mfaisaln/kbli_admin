@@ -86,22 +86,22 @@
                                                 
                                                 <div class="sparkline13-graph">
                                                     <div class="datatable-dashv1-list custom-datatable-overright">
-                                                        <div id="toolbar">
+                                                        <!-- <div id="toolbar">
                                                             <select class="form-control dt-tb">
                                                                 <option value="">Export Basic</option>
                                                                 <option value="all">Export All</option>
                                                                 <option value="selected">Export Selected</option>
                                                             </select>
-                                                        </div>
+                                                        </div> -->
                                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                                             data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                                             <thead>
                                                                 <tr>
                                                                     <th data-field="state" data-checkbox="true"></th>
                                                                     <th data-field="id">No</th>
-                                                                    <th data-field="nama" >Kode Kategori</th>
-                                                                    <th data-field="username" >Judul Kategori</th>
-                                                                    <th data-field="level" >Deskripsi Kategori</th>
+                                                                    <th data-field="kat" >Kode Kategori</th>
+                                                                    <th data-field="judul" >Judul Kategori</th>
+                                                                    <th data-field="desk" >Deskripsi Kategori</th>
                                                                     <th data-field="action">Action</th>
                                                                 </tr>
                                                             </thead>
@@ -144,23 +144,23 @@
                                                 
                                                 <div class="sparkline13-graph">
                                                     <div class="datatable-dashv1-list custom-datatable-overright">
-                                                        <div id="toolbar">
+                                                        <!-- <div id="toolbar">
                                                             <select class="form-control dt-tb">
                                                                 <option value="">Export Basic</option>
                                                                 <option value="all">Export All</option>
                                                                 <option value="selected">Export Selected</option>
                                                             </select>
-                                                        </div>
+                                                        </div> -->
                                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                                             data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                                             <thead>
                                                                 <tr>
                                                                     <th data-field="state" data-checkbox="true"></th>
                                                                     <th data-field="id">No</th>
-                                                                    <th data-field="nama" >Kode Golongan Pokok</th>
-                                                                    <th data-field="nama" >Kode Kategori</th>
-                                                                    <th data-field="username" >Judul Golongan Pokok</th>
-                                                                    <th data-field="level" >Deskripsi Golongan Pokok</th>
+                                                                    <th data-field="golpok" >Kode Golongan Pokok</th>
+                                                                    <th data-field="kate" >Kode Kategori</th>
+                                                                    <th data-field="judul" >Judul Golongan Pokok</th>
+                                                                    <th data-field="desk" >Deskripsi Golongan Pokok</th>
                                                                     <th data-field="action">Action</th>
                                                                 </tr>
                                                             </thead>
@@ -205,23 +205,23 @@
                                                 
                                                 <div class="sparkline13-graph">
                                                     <div class="datatable-dashv1-list custom-datatable-overright">
-                                                        <div id="toolbar">
+                                                        <!-- <div id="toolbar">
                                                             <select class="form-control dt-tb">
                                                                 <option value="">Export Basic</option>
                                                                 <option value="all">Export All</option>
                                                                 <option value="selected">Export Selected</option>
                                                             </select>
-                                                        </div>
+                                                        </div> -->
                                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                                             data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                                             <thead>
                                                                 <tr>
                                                                     <th data-field="state" data-checkbox="true"></th>
                                                                     <th data-field="id">No</th>
-                                                                    <th data-field="nama" >Kode Golongan</th>
-                                                                    <th data-field="nama" >Kode Golongan Pokok</th>
-                                                                    <th data-field="username" >Judul Golongan</th>
-                                                                    <th data-field="level" >Deskripsi Golongan</th>
+                                                                    <th data-field="gol" >Kode Golongan</th>
+                                                                    <th data-field="golpok" >Kode Golongan Pokok</th>
+                                                                    <th data-field="judul" >Judul Golongan</th>
+                                                                    <th data-field="desk" >Deskripsi Golongan</th>
                                                                     <th data-field="action">Action</th>
                                                                 </tr>
                                                             </thead>
@@ -266,23 +266,23 @@
                                                 
                                                 <div class="sparkline13-graph">
                                                     <div class="datatable-dashv1-list custom-datatable-overright">
-                                                        <div id="toolbar">
+                                                        <!-- <div id="toolbar">
                                                             <select class="form-control dt-tb">
                                                                 <option value="">Export Basic</option>
                                                                 <option value="all">Export All</option>
                                                                 <option value="selected">Export Selected</option>
                                                             </select>
-                                                        </div>
+                                                        </div> -->
                                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                                             data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                                             <thead>
                                                                 <tr>
                                                                     <th data-field="state" data-checkbox="true"></th>
                                                                     <th data-field="id">No</th>
-                                                                    <th data-field="nama" >Kode Sub Golongan</th>
-                                                                    <th data-field="nama" >Kode Golongan</th>
-                                                                    <th data-field="username" >Judul Sub Golongan</th>
-                                                                    <th data-field="level" >Deskripsi Sub Golongan</th>
+                                                                    <th data-field="subgol" >Kode Sub Golongan</th>
+                                                                    <th data-field="gol" >Kode Golongan</th>
+                                                                    <th data-field="judul" >Judul Sub Golongan</th>
+                                                                    <th data-field="desk" >Deskripsi Sub Golongan</th>
                                                                     <th data-field="action">Action</th>
                                                                 </tr>
                                                             </thead>
@@ -327,23 +327,23 @@
                                                 
                                                 <div class="sparkline13-graph">
                                                     <div class="datatable-dashv1-list custom-datatable-overright">
-                                                        <div id="toolbar">
+                                                        <!-- <div id="toolbar">
                                                             <select class="form-control dt-tb">
                                                                 <option value="">Export Basic</option>
                                                                 <option value="all">Export All</option>
                                                                 <option value="selected">Export Selected</option>
                                                             </select>
-                                                        </div>
+                                                        </div> -->
                                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
                                                             data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
                                                             <thead>
                                                                 <tr>
                                                                     <th data-field="state" data-checkbox="true"></th>
                                                                     <th data-field="id">No</th>
-                                                                    <th data-field="nama" >Kode Kelompok</th>
-                                                                    <th data-field="nama" >Kode Sub Golongan</th>
-                                                                    <th data-field="username" >Judul Kelompok</th>
-                                                                    <th data-field="level" >Deskripsi Kelompok</th>
+                                                                    <th data-field="kel" >Kode Kelompok</th>
+                                                                    <th data-field="subgol" >Kode Sub Golongan</th>
+                                                                    <th data-field="judul" >Judul Kelompok</th>
+                                                                    <th data-field="desk" >Deskripsi Kelompok</th>
                                                                     <th data-field="action">Action</th>
                                                                 </tr>
                                                             </thead>
