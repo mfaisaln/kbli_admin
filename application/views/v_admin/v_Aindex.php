@@ -69,7 +69,61 @@ if ($blokir==1) {
                 </div>
             </div>
         </div>
-        <div class="analytics-sparkle-area">
+        <div class="traffic-analysis-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu">
+                            <i class="fa fa-facebook"></i>
+                            <div class="social-edu-ctn">
+                                <h4>Kategori</h4>
+                                <h3>50k Likes</h3>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu twitter-cl res-mg-t-30 table-mg-t-pro-n">
+                            <i class="fa fa-twitter"></i>
+                            <div class="social-edu-ctn">
+                                <h4>Golongan Pokok</h4>
+                                <h3>30k followers</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu linkedin-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
+                            <i class="fa fa-linkedin"></i>
+                            <div class="social-edu-ctn">
+                                <h4>Golongan</h4>
+                                <h3>7k Connections</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu youtube-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
+                            <i class="fa fa-youtube"></i>
+                            <div class="social-edu-ctn">
+                                <h4>Sub Golongan</h4>
+                                <h3>50k Subscribers</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu youtube-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
+                            <i class="fa fa-youtube"></i>
+                            <div class="social-edu-ctn">
+                                <h4>Kelompok</h4>
+                                <h3>50k Subscribers</h3>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>
+        <!-- <div class="analytics-sparkle-area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
@@ -122,7 +176,7 @@ if ($blokir==1) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="product-sales-area mg-tb-30">
             <div class="container-fluid">
                 <div class="row">
@@ -198,48 +252,7 @@ if ($blokir==1) {
                 </div>
             </div>
         </div>
-        <div class="traffic-analysis-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="social-media-edu">
-                            <i class="fa fa-facebook"></i>
-                            <div class="social-edu-ctn">
-                                <h3>50k Likes</h3>
-                                <p>You main list growing</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="social-media-edu twitter-cl res-mg-t-30 table-mg-t-pro-n">
-                            <i class="fa fa-twitter"></i>
-                            <div class="social-edu-ctn">
-                                <h3>30k followers</h3>
-                                <p>You main list growing</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="social-media-edu linkedin-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
-                            <i class="fa fa-linkedin"></i>
-                            <div class="social-edu-ctn">
-                                <h3>7k Connections</h3>
-                                <p>You main list growing</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                        <div class="social-media-edu youtube-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
-                            <i class="fa fa-youtube"></i>
-                            <div class="social-edu-ctn">
-                                <h3>50k Subscribers</h3>
-                                <p>You main list growing</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="library-book-area mg-t-30">
             <div class="container-fluid">
                 <div class="row">

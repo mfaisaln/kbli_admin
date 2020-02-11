@@ -85,7 +85,7 @@
                                                         <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="nama" placeholder="Nama">
+                                                                    <input type="text"  class="form-control" name="nama" placeholder="Nama" >
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <input name="username" type="text" class="form-control" placeholder="Username">
