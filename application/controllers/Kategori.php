@@ -94,5 +94,25 @@ class Kategori extends CI_Controller{
 		$this->m_kategori->saveSubgol('kelompok',$data); // Panggil fungsi save() yang ada di SiswaModel.php
 		redirect(base_url('index.php/Kategori'));
 	 }
+	 public function hapusKate($id){
+		$this->m_kategori->deleteKate($id); // Panggil fungsi delete() yang ada di SiswaModel.php
+		redirect(base_url('index.php/Kategori/view'));
+	}
+	public function hapusGolpok($id){
+		$this->m_kategori->deleteGolpok($id); // Panggil fungsi delete() yang ada di SiswaModel.php
+		redirect(base_url('index.php/Kategori/view'));
+	}
+	public function hapusGol($id){
+		$this->m_kategori->deleteGol($id); // Panggil fungsi delete() yang ada di SiswaModel.php
+		redirect(base_url('index.php/Kategori/view'));
+	}
+	public function hapusSubgol($id){
+		$this->m_kategori->deleteSubgol($id); // Panggil fungsi delete() yang ada di SiswaModel.php
+		redirect(base_url('index.php/Kategori/view'));
+	}
+	public function hapusKel($id){
+		$this->m_kategori->deleteKel($id); // Panggil fungsi delete() yang ada di SiswaModel.php
+		redirect(base_url('index.php/Kategori/view'));
+	}
 	
 }
