@@ -47,17 +47,14 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <div class="breadcome-heading">
-                                            <form role="search" class="sr-input-func">
-                                                <input type="text" placeholder="Search..." class="search-int form-control">
-                                                <a href="#"><i class="fa fa-search"></i></a>
-                                            </form>
+                                            
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                         <ul class="breadcome-menu">
                                             <li><a href="#">Home</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">Tambah Admin</span>
+                                            <li><span class="bread-blod">Saran</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -75,49 +72,72 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="product-payment-inner-st">
                             <ul id="myTabedu1" class="tab-review-design">
-                                <li class="active"><a href="#description"> Edit Admin</a></li>
+                                <li class="active"><a href="#t1"> Tampil Saran</a></li>
+                                
                             </ul>
                             <div id="myTabContent" class="tab-content custom-product-edit">
-                                <div class="product-tab-list tab-pane fade active in" id="description">
-                                    <div class="row">
+                                <div class="product-tab-list tab-pane fade active in" id="t1">
+                                <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="review-content-section">
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                    
-                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/ubah'); ?>" class="acount-infor">
-                                                        <?php foreach($user as $data){?>
-                                                            <div class="devit-card-custom">
-                                                            <div class="form-group">
-                                                                    <input type="text" class="form-control" name="id" placeholder="Id" value="<?php echo $data->id ?>">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <input type="text" class="form-control" name="nama" placeholder="Nama" value="<?php echo $data->nama ?>">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <input name="username" type="text" class="form-control" placeholder="Username" value="<?php echo $data->username ?>">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <input name="password" type="password" class="form-control" placeholder="Password" value="<?php echo (md5($data->password)) ?>">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <select name="level" class="form-control" value="<?php echo $data->level ?>">
-																			<option value="none" selected="" disabled="">Pilih Level</option>
-																			<option value="1">Admin</option>
-																			<option value="0">Pegawai</option>
-																		</select>
-                                                                </div>
-                                                                <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
-                                                            </div>
-                                                            <?php } ?>
-                                                        </form>
-                                                        
+                                            <div class="sparkline13-list">
+                                                
+                                                <div class="sparkline13-graph">
+                                                    <div class="datatable-dashv1-list custom-datatable-overright">
+                                                        <!-- <div id="toolbar">
+                                                            <select class="form-control dt-tb">
+                                                                <option value="">Export Basic</option>
+                                                                <option value="all">Export All</option>
+                                                                <option value="selected">Export Selected</option>
+                                                            </select>
+                                                        </div> -->
+                                                        <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
+                                                            data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
+                                                            <thead>
+                                                                <tr>
+                                                                    
+                                                                    <th data-field="id">No</th>
+                                                                    <th data-field="nama" >Nama</th>
+                                                                    <th data-field="email" >Email</th>
+                                                                    <th data-field="subjek" >Subjek</th>
+                                                                    <th data-field="pesan" >Pesan</th>
+                                                                    <th data-field="action">Action</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <?php
+                                                                $i =1;
+                                                                    if( ! empty($saran)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
+                                                                        
+                                                                        foreach($saran as $data){
+                                                                
+                                                                        echo 
+                                                                        "<tr>
+                                                                        
+                                                                        <td>".$i++."</td>
+                                                                        <td>".$data->nama."</td>
+                                                                        <td>".$data->email."</td>
+                                                                        <td>".$data->subjek."</td>
+                                                                        <td>".$data->pesan."</td>
+                                                                        <td>
+                                                                                    <a href='".base_url("index.php/Kategori/cariKate/".$data->kode_saran)."' style='color:#ffff;' class='btn btn-success'><i class='fa  fa-check' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Saran/hapus/".$data->kode_saran)."' class='btn btn-danger'><i style='color:#ffff;' class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                        </td>
+                                                                        </tr>";
+                                                                        }
+                                                                    }else{ // Jika data siswa kosong
+                                                                        echo "<tr><td align='center' colspan='7'>Data Tidak Ada</td></tr>";
+                                                                    }
+                                                                ?>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
+                                
                             </div>
                         </div>
                     </div>

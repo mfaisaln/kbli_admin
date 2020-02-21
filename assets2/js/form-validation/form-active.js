@@ -127,6 +127,52 @@
 				error.insertAfter(element.parent());
 			}
 		});
+		$(".add-admin").validate(
+			{					
+				rules:
+				{	
+					nama:
+					{
+						required: true
+					},
+					username:
+					{
+						required: true
+					},
+					password:
+					{
+						required: true
+					},
+					level:
+					{
+						required: true
+					}
+				},
+				messages:
+				{	
+					nama:
+					{
+						required: 'Please enter first nama'
+					},
+					username:
+					{
+						required: 'Please enter last username'
+					},
+					password:
+					{
+						required: 'Please enter your password'
+					},
+					level:
+					{
+						required: 'Please enter admin atau pegawai'
+					}
+				},					
+				
+				errorPlacement: function(error, element)
+				{
+					error.insertAfter(element.parent());
+				}
+			});
 		
  
  // Validation for order form

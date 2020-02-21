@@ -72,53 +72,85 @@ if ($blokir==1) {
         <div class="traffic-analysis-area">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="social-media-edu">
                             <i class="fa fa-facebook"></i>
                             <div class="social-edu-ctn">
                                 <h4>Kategori</h4>
-                                <h3>50k Likes</h3>
+                                <h3> Terdapat 
+                                    <?php
+                                    echo $kategori;
+                                    ?> kategori kode KBLI
+                                </h3>
                             </div>
                         </div>
                     </div>
                 
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="social-media-edu twitter-cl res-mg-t-30 table-mg-t-pro-n">
                             <i class="fa fa-twitter"></i>
                             <div class="social-edu-ctn">
                                 <h4>Golongan Pokok</h4>
-                                <h3>30k followers</h3>
+                                <h3>Terdapat 
+                                    <?php
+                                        echo $golpokok;
+                                    ?> golongan pokok  kode KBLI
+                                </h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="social-media-edu linkedin-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
                             <i class="fa fa-linkedin"></i>
                             <div class="social-edu-ctn">
                                 <h4>Golongan</h4>
-                                <h3>7k Connections</h3>
+                                <h3>Terdapat 
+                                    <?php
+                                        echo $golongan;
+                                    ?> golongan  kode KBLI
+                                </h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="social-media-edu youtube-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
                             <i class="fa fa-youtube"></i>
                             <div class="social-edu-ctn">
                                 <h4>Sub Golongan</h4>
-                                <h3>50k Subscribers</h3>
+                                <h3>Terdapat 
+                                    <?php
+                                        echo $subgolongan;
+                                    ?> sub golongan  kode KBLI
+                                </h3>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
                         <div class="social-media-edu youtube-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
                             <i class="fa fa-youtube"></i>
                             <div class="social-edu-ctn">
                                 <h4>Kelompok</h4>
-                                <h3>50k Subscribers</h3>
+                                <h3>Terdapat 
+                                    <?php
+                                        echo $kelompok;
+                                    ?> kelompok kode KBLI
+                                </h3>
                             </div>
                         </div>
                     </div>
-                   
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                        <div class="social-media-edu youtube-cl res-mg-t-30 res-tablet-mg-t-30 dk-res-t-pro-30">
+                            <i class="fa fa-youtube"></i>
+                            <div class="social-edu-ctn">
+                                <h4>Saran</h4>
+                                <h3>Terdapat 
+                                    <?php
+                                        echo $saran;
+                                    ?> Saran dari user
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>

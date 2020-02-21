@@ -84,17 +84,17 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
                                                 <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                         <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahKate'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="kode_kategori" placeholder="kode_kategori">
+                                                                    <input type="text" class="form-control" name="kode_kategori" placeholder="kode_kategori" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="judul_kategori" placeholder="judul_kategori">
+                                                                    <input type="text" class="form-control" name="judul_kategori" placeholder="judul_kategori" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="deskripsi_kategori" type="text" class="form-control" placeholder="deskripsi_kategori">
+                                                                    <textarea name="deskripsi_kategori" type="text" class="form-control" placeholder="deskripsi_kategori" required=""></textarea>
                                                                 </div>
                                                                 
                                                                 <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
@@ -111,14 +111,14 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
                                                 <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                         <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahgolpok'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="kode_golonganpokok" placeholder="kode_golonganpokok">
+                                                                    <input type="text" class="form-control" name="kode_golonganpokok" placeholder="kode_golonganpokok" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <select name="kode_kategori" class="form-control">
+                                                                    <select name="kode_kategori" class="form-control" required="">
                                                                             <option value="none" selected="" disabled="">Pilih Katgori</option>
                                                                             <?php
                                                                                 if( ! empty($kategori)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
@@ -137,10 +137,10 @@
 																		</select>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="judul_golonganpokok" placeholder="judul_golonganpokok">
+                                                                    <input type="text" class="form-control" name="judul_golonganpokok" placeholder="judul_golonganpokok" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="deskripsi_golonganpokok" type="text" class="form-control" placeholder="deskripsi_golonganpokok">
+                                                                    <textarea name="deskripsi_golonganpokok" type="text" class="form-control" placeholder="deskripsi_golonganpokok" required=""></textarea>
                                                                 </div>
                                                                 
                                                                 <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
@@ -157,14 +157,14 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
                                                 <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                         <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahgol'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="kode_golongan" placeholder="kode_golongan">
+                                                                    <input type="text" class="form-control" name="kode_golongan" placeholder="kode_golongan" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <select name="kode_golonganpokok" class="form-control">
+                                                                    <select name="kode_golonganpokok" class="form-control" required="">
 																			<option value="none" selected="" disabled="">Pilih golongan pokok</option>
 																			<?php
                                                                                 if( ! empty($golPok)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
@@ -182,10 +182,10 @@
 																		</select>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="judul_golongan" placeholder="judul_golongan">
+                                                                    <input type="text" class="form-control" name="judul_golongan" placeholder="judul_golongan" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="deskripsi_golongan" type="text" class="form-control" placeholder="deskripsi_golongan">
+                                                                    <textarea name="deskripsi_golongan" type="text" class="form-control" placeholder="deskripsi_golongan" required=""></textarea>
                                                                 </div>
                                                                 
                                                                 <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
@@ -202,14 +202,14 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
                                                 <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                         <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahSubgol'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="kode_subgolongan" placeholder="kode_subgolongan">
+                                                                    <input type="text" class="form-control" name="kode_subgolongan" placeholder="kode_subgolongan" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <select name="kode_golongan" class="form-control">
+                                                                    <select name="kode_golongan" class="form-control" required="">
 																			<option value="none" selected="" disabled="">Pilih Golongan</option>
 																			<?php
                                                                                 if( ! empty($gol)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
@@ -226,10 +226,10 @@
 																		</select>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="judul_subgolongan" placeholder="judul_subgolongan">
+                                                                    <input type="text" class="form-control" name="judul_subgolongan" placeholder="judul_subgolongan" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="deskripsi_subgolongan" type="text" class="form-control" placeholder="deskripsi_subgolongan">
+                                                                    <textarea name="deskripsi_subgolongan" type="text" class="form-control" placeholder="deskripsi_subgolongan" required=""></textarea>
                                                                 </div>
                                                                 
                                                                 <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">
@@ -246,14 +246,14 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
                                                 <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                         <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Kategori/tambahKel'); ?>" class="acount-infor">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="kode_kelompok" placeholder="kode_kelompok">
+                                                                    <input type="text" class="form-control" name="kode_kelompok" placeholder="kode_kelompok" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <select name="kode_subgolongan" class="form-control">
+                                                                    <select name="kode_subgolongan" class="form-control" required="">
 																			<option value="none" selected="" disabled="">Pilih sub golongan</option>
 																			<?php
                                                                                 if( ! empty($subGol)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
@@ -270,10 +270,10 @@
 																		</select>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input type="text" class="form-control" name="judul_kelompok" placeholder="judul_kelompok">
+                                                                    <input type="text" class="form-control" name="judul_kelompok" placeholder="judul_kelompok" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="deskripsi_kelompok" type="text" class="form-control" placeholder="deskripsi_kelompok">
+                                                                    <textarea name="deskripsi_kelompok" type="text" class="form-control" placeholder="deskripsi_kelompok" required=""></textarea>
                                                                 </div>
                                                                 
                                                                 <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Simpan">

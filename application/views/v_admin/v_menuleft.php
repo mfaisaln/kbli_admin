@@ -22,6 +22,9 @@
                         <li >
                             <a title="Dashboard" href="<?php echo base_url('index.php/Admin2/index'); ?>" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap" aria-hidden="true"></span> <span class="mini-click-non">Admin</span></a>
                         </li>
+                        <li >
+                            <a title="Saean" href="<?php echo base_url('index.php/Saran/index'); ?>" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap" aria-hidden="true"></span> <span class="mini-click-non">Saran</span></a>
+                        </li>
                         <!-- <li>
                             <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>
                             <ul class="submenu-angle" aria-expanded="false">

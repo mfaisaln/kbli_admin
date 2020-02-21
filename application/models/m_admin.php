@@ -29,4 +29,34 @@ class M_admin extends CI_Model{
       public function ubah($where){
         return $this->db->get_where('user',$where)->result();
       }
+      public function Ckategori(){
+        $this->db->select('kode_kategori');
+        $query = $this->db->get('kategori');
+        return count($query->result()); 
+      }
+      public function Cgolpokok(){
+        $this->db->select('kode_golonganpokok');
+        $query = $this->db->get('golonganpokok');
+        return count($query->result()); 
+      }
+      public function Cgolongan(){
+        $this->db->select('kode_golongan');
+        $query = $this->db->get('golongan');
+        return count($query->result()); 
+      }
+      public function Csubgolongan(){
+        $this->db->select('kode_subgolongan');
+        $query = $this->db->get('subgolongan');
+        return count($query->result()); 
+      }
+      public function Ckelompok(){
+        $this->db->select('kode_kelompok');
+        $query = $this->db->get('kelompok');
+        return count($query->result()); 
+      }
+      public function Csaran(){
+        $this->db->select('kode_saran');
+        $query = $this->db->get('saran');
+        return count($query->result()); 
+      }
 }

@@ -2,7 +2,6 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Kbli extends CI_Controller {
-
 	/**
 	 * Index Page for this controller.
 	 *
@@ -18,8 +17,29 @@ class Kbli extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct(){
+		parent::__construct();
+	
+		$this->load->model('m_pesan'); // Load admin ke controller ini
+	}
 	public function index()
 	{
 		$this->load->view('index');
 	}
+	function tambahpesan(){
+		// $kode_pesan=$this->input->post('kode_pesan');
+		$nama=$this->input->post('nama');
+		$email=$this->input->post('email');
+		$subjek=$this->input->post('subjek');
+		$pesan=$this->input->post('pesan');
+		$data = array(
+
+			'nama' => $nama,
+			'email' => $email,
+			'subjek' => $subjek,
+			'pesan' => $pesan
+		);
+		$this->m_pesan->save('saran',$data); // Panggil fungsi save() yang ada di SiswaModel.php
+		redirect(base_url('index.php/Kategori'));
+	 }
 }

@@ -81,23 +81,20 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
                                                 <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                        <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor add-admin">
                                                             <div class="devit-card-custom">
                                                                 <div class="form-group">
-                                                                    <input type="text"  class="form-control" name="nama" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                                                    <div class="validation"></div>
+                                                                    <input name="nama" type="text" class="form-control" placeholder="Full Name" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="username" type="text" class="form-control" placeholder="Username" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                                                    <div class="validation"></div>
+                                                                    <input name="username" type="text" class="form-control" placeholder="Username" required=""> 
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <input name="password" type="password" class="form-control" placeholder="Password" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                                                    <div class="validation"></div>
+                                                                    <input name="password" type="password" class="form-control" placeholder="Password" required="">
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <select name="level" class="form-control">
+                                                                    <select name="level" class="form-control" required="">
 																			<option value="none" selected="" disabled="">Pilih Level</option>
 																			<option value="1">Admin</option>
 																			<option value="0">Pegawai</option>
@@ -111,7 +108,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
                                 </div>
+                                
                                 <div class="product-tab-list tab-pane fade" id="reviews">
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -168,15 +167,15 @@
                                                                         if ($this->session->userdata("level")==1) {
                                                                             if ($data->blokir==1) {
                                                                                 echo
-                                                                                    "<a href='".base_url("index.php/Admin2/blok2/".$data->id)."' class='btn btn-warning'><i class='fa fa-ban ' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                                    "<a href='".base_url("index.php/Admin2/blok2/".$data->id)."' class='btn btn-warning'><i style='color:#ffff;' class='fa fa-ban ' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i style='color:#ffff;' class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i style='color:#ffff;' class='fa fa-trash-o' aria-hidden='true'></i></a>
                                                                                     ";
                                                                             } else {
                                                                                 echo
-                                                                                    "<a href='".base_url("index.php/Admin2/blok/".$data->id)."' class='btn btn-success'><i class='fa  fa-check ' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                                    "<a href='".base_url("index.php/Admin2/blok/".$data->id)."' class='btn btn-success'><i style='color:#ffff;' class='fa  fa-check ' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Admin2/edit/".$data->id)."' class='btn btn-success'><i style='color:#ffff;' class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Admin2/hapus/".$data->id)."' class='btn btn-danger'><i style='color:#ffff;' class='fa fa-trash-o' aria-hidden='true'></i></a>
                                                                                     ";
                                                                             }
                                                                             
@@ -275,13 +274,14 @@
     <script src="<?php echo site_url('assets2/js/editable/bootstrap-datetimepicker.js') ?>"></script>
     <script src="<?php echo site_url('assets2/js/editable/bootstrap-editable.js') ?>"></script>
     <script src="<?php echo site_url('assets2/js/editable/xediable-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/form-validation/form-active.js') ?>"></script>
     <!-- Chart JS
 		============================================ -->
-    <script src="js/chart/jquery.peity.min.js"></script>
-    <script src="js/peity/peity-active.js"></script>
+    <script src="<?php echo site_url('assets2/js/chart/jquery.peity.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/peity/peity-active.js') ?>"></script>
     <!-- tab JS
 		============================================ -->
-    <script src="js/tab.js"></script>
+    <script src="<?php echo site_url('assets2/js/tab.js') ?>"></script>
 </body>
 
 </html>

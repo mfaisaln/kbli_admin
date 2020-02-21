@@ -101,7 +101,7 @@
                                                                     <th data-field="id">No</th>
                                                                     <th data-field="kat" >Kode Kategori</th>
                                                                     <th data-field="judul" >Judul Kategori</th>
-                                                                    <th data-field="desk" >Deskripsi Kategori</th>
+                                                                    <th data-field="desk"  >Deskripsi Kategori</th>
                                                                     <th data-field="action">Action</th>
                                                                 </tr>
                                                             </thead>
@@ -120,8 +120,8 @@
                                                                         <td>".$data->judul_kategori."</td>
                                                                         <td>".$data->deskripsi_kategori."</td>
                                                                         <td>
-                                                                                    <a href='".base_url("index.php/Kategori/cariKate/".$data->kode_kategori)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Kategori/hapusKate/".$data->kode_kategori)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/cariKate/".$data->kode_kategori)."' class='btn btn-success'><i style='color:#ffff;' class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/hapusKate/".$data->kode_kategori)."' class='btn btn-danger'><i style='color:#ffff;' class='fa fa-trash-o' aria-hidden='true'></i></a>
                                                                         </td>
                                                                         </tr>";
                                                                         }
@@ -181,8 +181,8 @@
                                                                         <td>".$data1->judul_golonganpokok."</td>
                                                                         <td>".$data1->deskripsi_golonganpokok."</td>
                                                                         <td>
-                                                                                    <a href='".base_url("index.php/Kategori/cariGolpok/".$data1->kode_golonganpokok)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Kategori/hapusGolpok/".$data1->kode_golonganpokok)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/cariGolpok/".$data1->kode_golonganpokok)."' class='btn btn-success'><i style='color:#ffff;' class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/hapusGolpok/".$data1->kode_golonganpokok)."' class='btn btn-danger'><i style='color:#ffff;' class='fa fa-trash-o' aria-hidden='true'></i></a>
                                                                         </td>
                                                                         </tr>";
                                                                         }
@@ -242,8 +242,8 @@
                                                                         <td>".$data2->judul_golongan."</td>
                                                                         <td>".$data2->deskripsi_golongan."</td>
                                                                         <td>
-                                                                                    <a href='".base_url("index.php/Kategori/cariGol/".$data2->kode_golongan)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Kategori/hapusGol/".$data2->kode_golongan)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/cariGol/".$data2->kode_golongan)."' class='btn btn-success'><i style='color:#ffff;' class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/hapusGol/".$data2->kode_golongan)."' class='btn btn-danger'><i style='color:#ffff;' class='fa fa-trash-o' aria-hidden='true'></i></a>
                                                                         </td>
                                                                         </tr>";
                                                                         }
@@ -303,8 +303,8 @@
                                                                         <td>".$data3->judul_subgolongan."</td>
                                                                         <td>".$data3->deskripsi_subgolongan."</td>
                                                                         <td>
-                                                                                    <a href='".base_url("index.php/Kategori/cariSubgol/".$data3->kode_subgolongan)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Kategori/hapusSubgol/".$data3->kode_subgolongan)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/cariSubgol/".$data3->kode_subgolongan)."' class='btn btn-success'><i style='color:#ffff;' class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/hapusSubgol/".$data3->kode_subgolongan)."' class='btn btn-danger'><i style='color:#ffff;' class='fa fa-trash-o' aria-hidden='true'></i></a>
                                                                         </td>
                                                                         </tr>";
                                                                         }
@@ -364,8 +364,8 @@
                                                                         <td>".$data4->judul_kelompok."</td>
                                                                         <td>".$data4->deskripsi_kelompok."</td>
                                                                         <td>
-                                                                                    <a href='".base_url("index.php/Kategori/cariKel/".$data4->kode_kelompok)."' class='btn btn-success'><i class='fa fa-pencil' aria-hidden='true'></i></a>
-                                                                                    <a href='".base_url("index.php/Kategori/hapusKel/".$data4->kode_kelompok)."' class='btn btn-danger'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/cariKel/".$data4->kode_kelompok)."' class='btn btn-success'><i style='color:#ffff;' class='fa fa-pencil' aria-hidden='true'></i></a>
+                                                                                    <a href='".base_url("index.php/Kategori/hapusKel/".$data4->kode_kelompok)."' class='btn btn-danger'><i style='color:#ffff;' class='fa fa-trash-o' aria-hidden='true'></i></a>
                                                                         </td>
                                                                         </tr>";
                                                                         }
