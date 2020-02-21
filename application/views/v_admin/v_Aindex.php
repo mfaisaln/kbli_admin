@@ -29,7 +29,7 @@ if ($blokir==1) {
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
+                        <a href="index.html"><img class="main-logo" style="width:200px;" src="<?php echo site_url('assets2/img/logo/logo.png') ?>" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@ if ($blokir==1) {
                                         <ul class="breadcome-menu">
                                             <li><a href="#">Home</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">Dashboard V.1</span>
+                                            <li><span class="bread-blod">Dashboard</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -177,7 +177,7 @@ if ($blokir==1) {
                 </div>
             </div>
         </div> -->
-        <div class="product-sales-area mg-tb-30">
+        <!-- <div class="product-sales-area mg-tb-30">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
@@ -583,13 +583,13 @@ if ($blokir==1) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="footer-copyright-area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-copy-right">
-                            <p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
+                            <p>Copyright © 2020. KBLI ICM</p>
                         </div>
                     </div>
                 </div>
@@ -599,62 +599,62 @@ if ($blokir==1) {
 
     <!-- jquery
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/vendor/jquery-1.12.4.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/vendor/jquery-1.12.4.min.js') ?>"></script>
     <!-- bootstrap JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/bootstrap.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/bootstrap.min.js') ?>"></script>
     <!-- wow JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/wow.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/wow.min.js') ?>"></script>
     <!-- price-slider JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/jquery-price-slider.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/jquery-price-slider.js') ?>"></script>
     <!-- meanmenu JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/jquery.meanmenu.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/jquery.meanmenu.js') ?>"></script>
     <!-- owl.carousel JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/owl.carousel.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/owl.carousel.min.js') ?>"></script>
     <!-- sticky JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/jquery.sticky.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/jquery.sticky.js') ?>"></script>
     <!-- scrollUp JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/jquery.scrollUp.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/jquery.scrollUp.min.js') ?>"></script>
     <!-- counterup JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/counterup/jquery.counterup.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/counterup/waypoints.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/counterup/counterup-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/counterup/jquery.counterup.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/counterup/waypoints.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/counterup/counterup-active.js') ?>"></script>
     <!-- mCustomScrollbar JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/scrollbar/mCustomScrollbar-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/scrollbar/mCustomScrollbar-active.js') ?>"></script>
     <!-- metisMenu JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/metisMenu/metisMenu.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/metisMenu/metisMenu-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/metisMenu/metisMenu.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/metisMenu/metisMenu-active.js') ?>"></script>
     <!-- morrisjs JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/morrisjs/raphael-min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/morrisjs/morris.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/morrisjs/morris-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/morrisjs/raphael-min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/morrisjs/morris.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/morrisjs/morris-active.js') ?>"></script>
     <!-- morrisjs JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/sparkline/jquery.sparkline.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/sparkline/jquery.charts-sparkline.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/sparkline/sparkline-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/sparkline/jquery.sparkline.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/sparkline/jquery.charts-sparkline.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/sparkline/sparkline-active.js') ?>"></script>
     <!-- calendar JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/calendar/moment.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/calendar/fullcalendar.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/calendar/fullcalendar-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/calendar/moment.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/calendar/fullcalendar.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/calendar/fullcalendar-active.js') ?>"></script>
     <!-- plugins JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/plugins.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/plugins.js') ?>"></script>
     <!-- main JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/main.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/main.js') ?>"></script>
     <!-- tawk chat JS
 		============================================ -->
 

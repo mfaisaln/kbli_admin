@@ -1,8 +1,8 @@
 <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" style="width:200px;" src="<?php echo site_url('assets/img/logo/logo.png') ?>" alt="" /></a>
-                <strong><a href="index.html"><img src="<?php echo site_url('assets/img/logo/logosn.png') ?>" alt="" /></a></strong>
+                <a href="index.html"><img class="main-logo" style="width:200px;" src="<?php echo site_url('assets2/img/logo/logo.png') ?>" alt="" /></a>
+                <strong><a href="index.html"><img src="<?php echo site_url('assets2/img/logo/logosn.png') ?>" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -44,9 +44,9 @@
                         <li>
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Library</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Library" href="library-assets.html"><span class="mini-sub-pro">Library Assets</span></a></li>
-                                <li><a title="Add Library" href="add-library-assets.html"><span class="mini-sub-pro">Add Library Asset</span></a></li>
-                                <li><a title="Edit Library" href="edit-library-assets.html"><span class="mini-sub-pro">Edit Library Asset</span></a></li>
+                                <li><a title="All Library" href="library-assets2.html"><span class="mini-sub-pro">Library assets2</span></a></li>
+                                <li><a title="Add Library" href="add-library-assets2.html"><span class="mini-sub-pro">Add Library Asset</span></a></li>
+                                <li><a title="Edit Library" href="edit-library-assets2.html"><span class="mini-sub-pro">Edit Library Asset</span></a></li>
                             </ul>
                         </li>
                         <li>

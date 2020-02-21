@@ -5,14 +5,14 @@
     <?php $this->load->view('header');?>
     <!-- x-editor CSS
 		============================================ -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/css/editor/select2.css') ?>">
-    <link rel="stylesheet" href="<?php echo site_url('assets/css/editor/datetimepicker.css') ?>">
-    <link rel="stylesheet" href="<?php echo site_url('assets/css/editor/bootstrap-editable.css') ?>">
-    <link rel="stylesheet" href="<?php echo site_url('assets/css/editor/x-editor-style.css') ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/editor/select2.css') ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/editor/datetimepicker.css') ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/editor/bootstrap-editable.css') ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/editor/x-editor-style.css') ?>">
     <!-- normalize CSS
 		============================================ -->
-    <link rel="stylesheet" href="<?php echo site_url('assets/css/data-table/bootstrap-table.css') ?>">
-    <link rel="stylesheet" href="<?php echo site_url('assets/css/data-table/bootstrap-editable.css') ?>"> 
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/data-table/bootstrap-table.css') ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/data-table/bootstrap-editable.css') ?>"> 
 </head>
 
 <body>
@@ -148,61 +148,61 @@
         </div>
     </div>
 
-    <script src="<?php echo site_url('assets/js/vendor/jquery-1.12.4.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/vendor/jquery-1.12.4.min.js') ?>"></script>
     <!-- bootstrap JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/bootstrap.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/bootstrap.min.js') ?>"></script>
     <!-- wow JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/wow.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/wow.min.js') ?>"></script>
     <!-- price-slider JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/jquery-price-slider.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/jquery-price-slider.js') ?>"></script>
     <!-- meanmenu JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/jquery.meanmenu.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/jquery.meanmenu.js') ?>"></script>
     <!-- owl.carousel JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/owl.carousel.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/owl.carousel.min.js') ?>"></script>
     <!-- sticky JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/jquery.sticky.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/jquery.sticky.js') ?>"></script>
     <!-- scrollUp JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/jquery.scrollUp.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/jquery.scrollUp.min.js') ?>"></script>
     <!-- mCustomScrollbar JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/scrollbar/mCustomScrollbar-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/scrollbar/mCustomScrollbar-active.js') ?>"></script>
     <!-- metisMenu JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/metisMenu/metisMenu.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/metisMenu/metisMenu-active.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/plugins.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/metisMenu/metisMenu.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/metisMenu/metisMenu-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/plugins.js') ?>"></script>
     <!-- main JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/main.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/main.js') ?>"></script>
     <!-- tawk chat JS
         ============================================ -->
         <!-- data table JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/data-table/bootstrap-table.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/data-table/tableExport.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/data-table/data-table-active.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/data-table/bootstrap-table-editable.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/data-table/bootstrap-editable.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/data-table/bootstrap-table-resizable.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/data-table/colResizable-1.5.source.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/data-table/bootstrap-table-export.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-table.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/tableExport.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/data-table-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-table-editable.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-editable.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-table-resizable.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/colResizable-1.5.source.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-table-export.js') ?>"></script>
     <!--  editable JS
 		============================================ -->
-    <script src="<?php echo site_url('assets/js/editable/jquery.mockjax.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/editable/mock-active.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/editable/select2.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/editable/moment.min.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/editable/bootstrap-datetimepicker.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/editable/bootstrap-editable.js') ?>"></script>
-    <script src="<?php echo site_url('assets/js/editable/xediable-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/jquery.mockjax.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/mock-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/select2.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/moment.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/bootstrap-datetimepicker.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/bootstrap-editable.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/xediable-active.js') ?>"></script>
     <!-- Chart JS
 		============================================ -->
     <script src="js/chart/jquery.peity.min.js"></script>

@@ -81,19 +81,19 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-															<img src="<?php echo site_url('assets/img/product/pro4.jpg') ?>" alt="" />
+															<img src="<?php echo site_url('assets2/img/product/pro4.jpg') ?>" alt="" />
 															<span class="admin-name"><?php echo $this->session->userdata("nama"); ?></span>
 															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                        <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
-                                                        </li>
+                                                        <!-- <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
+                                                        </li> -->
                                                         <li><a href="#"><span class="edu-icon edu-user-rounded author-log-ic"></span>My Profile</a>
                                                         </li>
-                                                        <li><a href="#"><span class="edu-icon edu-money author-log-ic"></span>User Billing</a>
+                                                        <!-- <li><a href="#"><span class="edu-icon edu-money author-log-ic"></span>User Billing</a>
                                                         </li>
                                                         <li><a href="#"><span class="edu-icon edu-settings author-log-ic"></span>Settings</a>
-                                                        </li>
+                                                        </li> -->
                                                         <li><a href="<?php echo base_url('index.php/login/logout'); ?>"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
                                                         </li>
                                                     </ul>

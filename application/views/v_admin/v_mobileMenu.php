@@ -8,18 +8,19 @@
                                         <li><a href="<?php echo base_url('index.php/admin/index'); ?>">Dashboard</a></li>
                                         <li><a data-toggle="collapse" data-target="#Charts" href="#">Kategori KBLI <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul class="collapse dropdown-header-top">
-                                                <li><a href="index.html">Tambah Kategori</a></li>
-                                                <li><a href="index-1.html">Table Kategori</a></li>
+                                                <li><a href="<?php echo base_url('index.php/Kategori/index'); ?>">Tambah Kategori</a></li>
+                                                <li><a href="<?php echo base_url('index.php/Kategori/view'); ?>">Table Kategori</a></li>
                                             </ul>
                                         </li>
-                                        <li><a data-toggle="collapse" data-target="#demoevent" href="#">Admin <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                        <li><a href="<?php echo base_url('index.php/Admin2/index'); ?>">Dashboard</a></li>
+                                        <!-- <li><a data-toggle="collapse" data-target="#demoevent" href="#">Admin <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demoevent" class="collapse dropdown-header-top">
                                                 <li><a href="all-professors.html">Tambah Admin</a>
                                                 </li>
                                                 <li><a href="add-professor.html">Table Admin</a>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                         <!-- <li><a data-toggle="collapse" data-target="#demopro" href="#">Students <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demopro" class="collapse dropdown-header-top">
                                                 <li><a href="all-students.html">All Students</a>
@@ -48,11 +49,11 @@
                                         </li>
                                         <li><a data-toggle="collapse" data-target="#demolibra" href="#">Library <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demolibra" class="collapse dropdown-header-top">
-                                                <li><a href="library-assets.html">Library Assets</a>
+                                                <li><a href="library-assets22.html">Library assets22</a>
                                                 </li>
-                                                <li><a href="add-library-assets.html">Add Library Asset</a>
+                                                <li><a href="add-library-assets22.html">Add Library Asset</a>
                                                 </li>
-                                                <li><a href="edit-library-assets.html">Edit Library Asset</a>
+                                                <li><a href="edit-library-assets2.html">Edit Library Asset</a>
                                                 </li>
                                             </ul>
                                         </li>
