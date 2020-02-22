@@ -1,8 +1,8 @@
 <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.html"><img class="main-logo" style="width:200px;" src="<?php echo site_url('assets2/img/logo/logo.png') ?>" alt="" /></a>
-                <strong><a href="index.html"><img src="<?php echo site_url('assets2/img/logo/logosn.png') ?>" alt="" /></a></strong>
+                <a href="<?php echo base_url('index.php/admin/index'); ?>"><img class="main-logo" style="width:200px;" src="<?php echo site_url('assets2/img/logo/logo.png') ?>" alt="" /></a>
+                <strong><a href="<?php echo base_url('index.php/admin/index'); ?>"><img src="<?php echo site_url('assets2/img/logo/logosn.png') ?>" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -23,7 +23,10 @@
                             <a title="Dashboard" href="<?php echo base_url('index.php/Admin2/index'); ?>" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap" aria-hidden="true"></span> <span class="mini-click-non">Admin</span></a>
                         </li>
                         <li >
-                            <a title="Saean" href="<?php echo base_url('index.php/Saran/index'); ?>" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap" aria-hidden="true"></span> <span class="mini-click-non">Saran</span></a>
+                            <a title="Saran" href="<?php echo base_url('index.php/Saran/index'); ?>" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap" aria-hidden="true"></span> <span class="mini-click-non">Saran</span></a>
+                        </li>
+                        <li >
+                            <a title="website" href="<?php echo base_url('index.php/kbli/index'); ?>" target="_blank" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap" aria-hidden="true"></span> <span class="mini-click-non">Lihat website</span></a>
                         </li>
                         <!-- <li>
                             <a class="has-arrow" href="all-students.html" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Students</span></a>

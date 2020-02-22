@@ -14,6 +14,8 @@
                                         </li>
                                         <li><a href="<?php echo base_url('index.php/Admin2/index'); ?>">Admin</a></li>
                                         <li><a href="<?php echo base_url('index.php/Saran/index'); ?>">Saran</a></li>
+                                        <li><a href="<?php echo base_url('index.php/kbli/index'); ?>" target="_blank">Lihat Website</a></li>
+                                        
                                         <!-- <li><a data-toggle="collapse" data-target="#demoevent" href="#">Admin <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                             <ul id="demoevent" class="collapse dropdown-header-top">
                                                 <li><a href="all-professors.html">Tambah Admin</a>

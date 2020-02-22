@@ -122,7 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="col-md-6 intro-info order-md-first order-last">
           <h2>KBLI Solusi<br> <span>Untuk Usaha Anda!</span></h2>
           <div>
-            <a href="#" class="btn-get-started scrollto">Mulai Tes KBLI</a>
+            <a href="<?php echo base_url('index.php/QNA/index'); ?>" class="btn-get-started scrollto">Mulai Tes KBLI</a>
           </div>
         </div>
   
@@ -480,20 +480,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
               <form method="post" action="<?php echo base_url('index.php/kbli/tambahpesan'); ?>" role="form" class="contactForm">
                 <div class="form-group">
-                  <input type="text" name="nama" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
+                  <input type="text" name="nama" class="form-control" id="name" placeholder="Your Name" required="">
+                  
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subjek" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
+                  <input type="text" class="form-control" name="subjek" id="subject" placeholder="Subject" required="">
+                  
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="pesan" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
+                  <textarea class="form-control" name="pesan" rows="5" data-rule="required" required="" placeholder="Message"></textarea>
+                  
                 </div>
 
                 <!-- <div id="sendmessage">Your message has been sent. Thank you!</div>
