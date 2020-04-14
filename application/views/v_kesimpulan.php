@@ -45,42 +45,47 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </head>
 <body>
-<h3>Pilih Kelompok</h3>
+<div class="clearfix" id="intro" style="padding-top:70px;">
+<header class="section-header" style="padding-top:60px">  
+  <h3>Kode KBLI Usaha Anda</h3>
+</header>
 
-<table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
-    data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
-    <thead>
-        <tr>
-            
-            <th data-field="id">No</th>
-            <th data-field="kel" >Kode Kelompok</th>
-            <th data-field="judul" >Judul Kelompok</th>
-            <th data-field="desk" >Deskripsi Kelompok</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php
-        $i =1;
+
+<div class="containertable" style="margin: 0 auto;width:60%">
+  <div class="row">
+    <div class="col-12">
+    <form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabKel'); ?>" class="acount-infor add-admin formkategori">  
+      <table class="table table-bordered table-stripped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Kode KBLI</th>
+            <th scope="col">KBLI</th>
+            <th scope="col">Deskripsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+          $i =1;
             if( ! empty($kel)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
-                
-                foreach($kel as $data){
-        
-                echo 
-                "<tr>
-                
-                <td>".$i++."</td>
-                <td>".$data->kode_kelompok."</td>
-                <td>".$data->judul_kelompok."</td>
-                <td>".$data->deskripsi_kelompok."</td>
-                </tr>";
-                }
-            }else{ // Jika data siswa kosong
-                echo "<tr><td align='center' colspan='7'>Data Tidak Ada</td></tr>";
+              foreach($kel as $data){
+                  echo "<tr>";
+                  echo "<td>".$i++."</td>";
+                  echo "<td>".$data->kode_kelompok."</td>";
+                  echo "<td>".$data->judul_kelompok."</td>";
+                  echo "<td>".$data->deskripsi_kelompok."</td>";
+                  echo "</tr>";
+              }
             }
-        ?>
-    </tbody>
-</table>
-<input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Next">
-
+          ?>
+        </tbody>
+      </table>
+      <a href="<?php echo base_url('index.php/kbli/index'); ?>" class="btn btn-primary waves-effect waves-light float-right" type="submit"  style="color:white;">back</a>
+    </form>
+    
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>

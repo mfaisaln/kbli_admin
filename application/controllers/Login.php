@@ -21,11 +21,17 @@ class Login extends CI_Controller {
 	function __construct(){
 		parent::__construct();		
 		$this->load->model('m_login');
+		
  
 	}
 	function index()
 	{
-		$this->load->view('v_admin/v_login');
+		if($this->session->userdata('status') == "login"){
+			redirect(base_url('index.php/admin'));
+		}else{
+			$this->load->view('v_admin/v_login');
+		}
+		
 	}
 
 	function aksi_login(){

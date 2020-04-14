@@ -45,8 +45,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </head>
 <body>
-<h3>Pilih Sub Golongan</h3>
-<form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabKel'); ?>" class="acount-infor add-admin">
+<div class="clearfix" id="intro" style="padding-top:70px;">
+<header class="section-header" style="padding-top:60px">  
+  <h3>Pilih Sub Golongan</h3>
+</header>
+
+<!--<form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabKel'); ?>" class="acount-infor add-admin">
     <?php
     if( ! empty($subGol)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
       foreach($subGol as $data){
@@ -56,7 +60,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     ?>
 		
     <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Next">
-</form>
+</form>-->
 
+<div class="containertable" style="margin: 0 auto;width:60%">
+  <div class="row">
+    <div class="col-12">
+    <form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabKel'); ?>" class="acount-infor add-admin formkategori">  
+      <table class="table table-bordered table-stripped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" style="width:13px">Pilih</th>
+            <th scope="col">Sub Golongan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+            if( ! empty($subGol)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
+              foreach($subGol as $data){
+                  echo "<tr>";
+                  echo "<td align='center'><input type='checkbox' name='check_list[]' alt='checkbox' value='".$data->kode_subgolongan."'></td>";
+                  echo "<td>".$data->judul_subgolongan."</td>";
+                  echo "</tr>";
+              }
+            }
+          ?>
+        </tbody>
+      </table>
+      <input class="btn btn-primary waves-effect waves-light float-right" type="submit" name="submit" value="Next">
+    </form>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>

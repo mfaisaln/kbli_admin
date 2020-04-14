@@ -177,17 +177,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </header>
 
         <div class="row">
-
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box" style="height:350px">
-              <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <div class="icon" style="background: #e6fdfc;"><i class="fa" style="color:#3fcdc7;">&#xf1e7;</i></div>
               <h4 class="title"><a href="">Sharing</a></h4>
               <p style="text-align:center" class="description">Kami membagikan informasi kepada masyarakat tentang apa itu KBLI, apa manfaat dari adanya KBLI. Sehingga masyarakat dengan mandiri dapat melakukan pengecekkan usaha yang dimilikinya.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box" style="height:350px">
-              <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
+              <div class="icon" style="background: #e6fdfc;"><i class="fa" style="color: #3fcdc7;">&#xf129;</i></div>
               <h4 class="title"><a href="">Tutorial Penggunaan</a></h4>
               <p style="text-align:center" class="description">Kami menyediakan tutorial penggunaan website Tes KBLI agar memudahkan pengguna yang ingin melakukan tes KBLI.</p>
             </div>
@@ -195,12 +194,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box" style="height:350px">
-              <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+              <div class="icon" style="background: #e6fdfc;"><i class="fa" style="color: #3fcdc7;">&#xf1d7;</i></div>
               <h4 class="title"><a href="">Konsultasi</a></h4>
               <p style="text-align:center" class="description">Kami menyediakan tempat untuk berkonsultasi dengan para pelaku usaha dan instansi yang bersangkutan sehingga masyarakat lebih leluasa untuk melakukan tanya jawab terkait KBLI.</p>
             </div>
           </div>
         </div>
+      </div>
 
       </div>
     </section><!-- #services -->
@@ -211,19 +211,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       Clients Section
     ============================-->
     <section id="testimonials">
-      <div class="container" style="height:420px">
-
+      
+      <div class="container" style="height:420px;margin-top:50px">
         <header class="section-header">
           <h3>Metode</h3>
         </header>
 
         <div class="row justify-content-center">
           <div class="col-lg-8">
-
             <div class="owl-carousel testimonials-carousel wow fadeInUp">
-    
+              
               <div class="testimonial-item">
-                <img src="<?php echo base_url('assets/img/testimonial-1.jpg')?>" class="testimonial-img" alt="">
+                <img src="<?php echo base_url('assets/img/testimonial-12.jpg')?>" class="testimonial-img" alt="">
                 <h3>Taksonomi</h3>
                 <p>
                 Taksonomi bertujuan untuk merancang sebuah visualisasi informasi agar lebih baik dengan menerapkan faktor utama dalam proses pengembangan sebuah antarmuka. Pada pengembangan system informasi yang terstruktur dan memperhatikan pertimbangan yang baik, dapat menghasilkan kualitas visualisasi yang lebih tinggi. Kerangka kerja ini juga berfungsi untuk membantu pengembangan evaluasi yang efektif dan proses penilaian sistem visualisasi informasi.
@@ -231,7 +230,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
     
               <div class="testimonial-item">
-                <img src="<?php echo base_url('assets/img/testimonial-2.jpg')?>" class="testimonial-img" alt="">
+                <img src="<?php echo base_url('assets/img/testimonial-22.jpg')?>" class="testimonial-img" alt="">
                 <h3>Question and Answer</h3>
                 <p>
                 Question and Answering System (QAS) adalah sistem dimana tiap user dapat mengajukan pertanyaan dan menjawab pertanyaan dalam berbagai topik. Dalam proses pengembangan sebuah QAS yang baik dibutuhkan pengetahuan dari berbagai disiplin ilmu yaitu seperti Natural Language Processing, Information Extraction, dan Information Retrieval.                
@@ -239,35 +238,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
     
               <div class="testimonial-item">
-                <img src="<?php echo base_url('assets/img/testimonial-3.jpg')?>" class="testimonial-img" alt="">
+                <img src="<?php echo base_url('assets/img/testimonial-32.jpg')?>" class="testimonial-img" alt="">
                 <h3>Decision Tree</h3>
                 <p>
                 Pohon keputusan adalahstrukturpohonsepertibaganalur,dimana masing-masing simpul internal merupakan tes pada atribut, setiap cabang mewakili hasil tes, label kelas diwakili oleh masing-masing simpul leaf (atau simpul terminal). Decision Tree digunakan untuk pengenalan pola dan termasuk dalam pengenalan pola secara statistik.
                 </p>
               </div>
-            </div>
 
+            </div>
           </div>
         </div>
-
-
       </div>
+
     </section><!-- #testimonials -->
 
     <!--==========================
       Team Section
     ============================-->
     <section id="team" class="section-bg">
+      
       <div class="container">
         <div class="section-header">
           <h3>Team</h3>
         </div>
-
         <div class="row">
-
+          
           <div class="col-lg-4 col-md-6 wow fadeInUp">
             <div class="member">
-              <img src="<?php echo base_url('assets/img/team-1.jpg')?>" class="img-fluid" alt="">
+              <img src="<?php echo base_url('assets/img/team-12.jpg')?>" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Muhammad Ihsanuddienullah</h4>
@@ -279,7 +277,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="member">
-              <img src="<?php echo base_url('assets/img/team-2.jpg')?>" class="img-fluid" alt="">
+              <img src="<?php echo base_url('assets/img/team-22.jpg')?>" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Muhammad Faisal Nur</h4>
@@ -291,7 +289,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
             <div class="member">
-              <img src="<?php echo base_url('assets/img/team-3.jpg')?>" class="img-fluid" alt="">
+              <img src="<?php echo base_url('assets/img/tean-13.jpg')?>" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Hendro Susanto</h4>
@@ -302,29 +300,29 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
 
         </div>
-
       </div>
+      
     </section><!-- #team -->
 
     <!--==========================
       Clients Section
     ============================-->
     <section id="clients" class="wow fadeInUp">
+      
       <div class="container">
-
         <header class="section-header">
-          <h3>Our Clients</h3>
+          <h3>Tools</h3>
         </header>
 
         <div class="owl-carousel clients-carousel">
-          <img src="<?php echo base_url('assets/img/clients/client-1.png')?>" alt="">
-          <img src="<?php echo base_url('assets/img/clients/client-2.png')?>" alt="">
-          <img src="<?php echo base_url('assets/img/clients/client-3.png')?>" alt="">
-          <img src="<?php echo base_url('assets/img/clients/client-4.png')?>" alt="">
-          <img src="<?php echo base_url('assets/img/clients/client-5.png')?>" alt="">
-          <img src="<?php echo base_url('assets/img/clients/client-6.png')?>" alt="">
-          <img src="<?php echo base_url('assets/img/clients/client-7.png')?>" alt="">
-          <img src="<?php echo base_url('assets/img/clients/client-8.png')?>" alt="">
+          <img src="<?php echo base_url('assets/img/clients/client-12.png')?>" alt="">
+          <img src="<?php echo base_url('assets/img/clients/client-22.png')?>" alt="">
+          <img src="<?php echo base_url('assets/img/clients/client-32.png')?>" alt="">
+          <img src="<?php echo base_url('assets/img/clients/client-42.png')?>" alt="">
+          <img src="<?php echo base_url('assets/img/clients/client-52.png')?>" alt="">
+          <img src="<?php echo base_url('assets/img/clients/client-62.png')?>" alt="">
+          <img src="<?php echo base_url('assets/img/clients/client-72.png')?>" alt="">
+          <img src="<?php echo base_url('assets/img/clients/client-82.png')?>" alt="">
         </div>
 
       </div>
@@ -337,72 +335,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     ==========================
       Frequently Asked Questions Section
     ============================-->
-    <section id="faq">
-      <div class="container">
-        <header class="section-header">
-          <h3>Frequently Asked Questions</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </header>
-
-        <ul id="faq-list" class="wow fadeInUp">
-          <li>
-            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="ion-android-remove"></i></a>
-            <div id="faq1" class="collapse" data-parent="#faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="ion-android-remove"></i></a>
-            <div id="faq2" class="collapse" data-parent="#faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="ion-android-remove"></i></a>
-            <div id="faq3" class="collapse" data-parent="#faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="ion-android-remove"></i></a>
-            <div id="faq4" class="collapse" data-parent="#faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="ion-android-remove"></i></a>
-            <div id="faq5" class="collapse" data-parent="#faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="ion-android-remove"></i></a>
-            <div id="faq6" class="collapse" data-parent="#faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section><!-- #faq -->
+    <!-- #faq -->
 
   </main>
 
@@ -422,8 +355,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-sm-6">
 
                   <div class="footer-info">
-                    <h3>Rapid</h3>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                    <h3>Hubungi Kami</h3>
+                    <!--<p>.</p>-->
                   </div>
 
                   <div class="footer-newsletter">
@@ -438,24 +371,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <div class="col-sm-6">
                   <div class="footer-links">
-                    <h4>Useful Links</h4>
+                    <h4>Ikuti Kami</h4>
                     <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Terms of service</a></li>
-                      <li><a href="#">Privacy policy</a></li>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">Instagram</a></li>
+                      <li><a href="#">Twitter</a></li>
                     </ul>
                   </div>
 
                   <div class="footer-links">
-                    <h4>Contact Us</h4>
+                    <h4>Hubungi Kami</h4>
                     <p>
-                      A108 Adam Street <br>
-                      New York, NY 535022<br>
-                      United States <br>
-                      <strong>Phone:</strong> +1 5589 55488 55<br>
-                      <strong>Email:</strong> info@example.com<br>
+                      Telkom University <br>
+                      Fakultas Informatika<br>
+                      Kabupaten Bandung <br>
+                      <strong>Phone:</strong> +62822 1664 9130<br>
+                      <strong>Email:</strong> mfaisaln26@gmail.com<br>
                     </p>
                   </div>
 
@@ -476,8 +407,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             <div class="form">
               
-              <h4>Send us a message</h4>
-              <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
+              <h4>Kirim Pesan</h4>
+              <p> Ada saran dan kritikan ? </strong> Berikan saran dan kritik kepada kami demi pengembangan yang lebih baik pada kolom dibawah ini. </p>
               <form method="post" action="<?php echo base_url('index.php/kbli/tambahpesan'); ?>" role="form" class="contactForm">
                 <div class="form-group">
                   <input type="text" name="nama" class="form-control" id="name" placeholder="Your Name" required="">
@@ -499,7 +430,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!-- <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div> -->
 
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                <div class="text-center"><button type="submit" title="Send Message">Kirim Pesan</button></div>
               </form>
             </div>
 

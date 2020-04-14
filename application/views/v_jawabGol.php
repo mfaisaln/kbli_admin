@@ -42,11 +42,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+  
+  <style>
+    .formkategori {
+      margin:0 auto;
+      font-weight:bold;
+    }
 
+    .containertable {
+      padding: 2rem 0rem;
+    }
+    .h4table {
+      margin: 2rem 0rem 1rem;
+    }
+    .table-image {
+      td, th {
+        vertical-align: middle;
+      }
+    }
+  </style>
 </head>
 <body>
-<h3>Pilih Golongan</h3>
-<form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabSubGol'); ?>" class="acount-infor add-admin">
+<div class="clearfix" id="intro" style="padding-top:70px;">
+<header class="section-header" style="padding-top:60px">  
+  <h3>Pilih Golongan</h3>
+</header>
+
+<!--<form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabSubGol'); ?>" class="acount-infor add-admin">
     <?php
     if( ! empty($gol)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
       foreach($gol as $data){
@@ -56,7 +78,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     ?>
 		
     <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Next">
-</form>
+</form>-->
 
+<div class="containertable" style="margin: 0 auto;width:60%">
+  <div class="row">
+    <div class="col-12">
+    <form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabSubGol'); ?>" class="acount-infor add-admin formkategori">  
+      <table class="table table-bordered table-stripped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" style="width:13px">Pilih</th>
+            <th scope="col">Golongan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+            if( ! empty($gol)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
+              foreach($gol as $data){
+                  echo "<tr>";
+                  echo "<td align='center'><input type='checkbox' name='check_list[]' alt='checkbox' value='".$data->kode_golongan."'></td>";
+                  echo "<td>".$data->judul_golongan."</td>";
+                  echo "</tr>";
+              }
+            }
+          ?>
+        </tbody>
+      </table>
+      <input class="btn btn-primary waves-effect waves-light float-right" type="submit" name="submit" value="Next">
+    </form>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>

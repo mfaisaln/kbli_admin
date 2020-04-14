@@ -42,21 +42,80 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" rel="stylesheet">
 
-</head>
-<body>
-<h3>Pilih Karegori</h3>
-<form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabgolPok'); ?>" class="acount-infor add-admin">
-    <?php
-    if( ! empty($kategori)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
-      foreach($kategori as $data){
-        echo "<input type='checkbox' name='check_list[]' alt='heckbox' value='".$data->kode_kategori."'>".$data->judul_kategori."</input></br>";
+  <style>
+    .formkategori {
+      margin:0 auto;
+      font-weight:bold;
+    }
+
+    .containertable {
+      padding: 2rem 0rem;
+    }
+    .h4table {
+      margin: 2rem 0rem 1rem;
+    }
+    .table-image {
+      td, th {
+        vertical-align: middle;
       }
     }
-    ?>
-		
-    <input class="btn btn-primary waves-effect waves-light"  type="submit" name="submit" value="Next">
-</form>
+  </style>
+</head>
+<body>
+<div class="clearfix" id="intro" style="padding-top:70px;">
+<header class="section-header" style="padding-top:60px">  
+  <h3>Pilih Kategori</h3>
+</header>
 
+<!--<form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabgolPok'); ?>" class="acount-infor add-admin formkategori">
+      <table>
+      <?php
+      if( ! empty($kategori)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
+        foreach($kategori as $data){
+          echo "<input type='checkbox' name='check_list[]' alt='checkbox' value='".$data->kode_kategori."'>".$data->judul_kategori."</input></br>";
+        }
+      }
+      ?>
+      </table>
+    <input class="btn btn-primary waves-effect waves-light text-center"  type="submit" name="submit" value="Next">
+</form>-->
+
+<div class="containertable" style="margin: 0 auto;width:60%">
+  <div class="row">
+    <div class="col-12">
+    <form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabgolPok'); ?>" class="acount-infor add-admin formkategori">  
+      <table class="table table-bordered table-stripped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" style="width:13px">Pilih</th>
+            <th scope="col">Kategori</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php
+            if( ! empty($kategori)){ // Jika data siswa tidak sama dengan kosong, artinya jika data siswa ada
+              foreach($kategori as $data){
+                  echo "<tr>";
+                  echo "<td align='center'><input  type='checkbox' name='check_list[]' alt='checkbox' value='".$data->kode_kategori."'></td>";
+                  echo "<td>".$data->judul_kategori."</td>";
+                  echo "</tr>";
+              }
+            }
+          ?>
+        </tbody>
+      </table>
+      
+      <input class="btn btn-primary waves-effect waves-light float-right" type="submit" name="submit" value="Next">
+      <?php
+      ?>
+    </form>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>
