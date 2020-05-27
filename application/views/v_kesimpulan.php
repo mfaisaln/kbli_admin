@@ -24,7 +24,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link href="<?php echo base_url('assets/lib/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+   <!-- link datatable -->
+    <!-- x-editor CSS
+		============================================ -->
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/editor/select2.css') ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/editor/datetimepicker.css') ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/editor/bootstrap-editable.css') ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/editor/x-editor-style.css') ?>">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/data-table/bootstrap-table.css') ?>">
+    <link rel="stylesheet" href="<?php echo site_url('assets2/css/data-table/bootstrap-editable.css') ?>"> 
 
+  <!-- link datatable -->
   <!-- Libraries CSS Files -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="<?php echo base_url('assets/lib/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet">
@@ -44,18 +56,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   ======================================================= -->
 
 </head>
-<body>
-<div class="clearfix" id="intro" style="padding-top:70px;">
-<header class="section-header" style="padding-top:60px">  
-  <h3>Kode KBLI Usaha Anda</h3>
-</header>
 
+<body>
+<body  class="clearfix" id="intro" style="padding-top:70px; min-height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+">
+<div>
+
+
+<br><br>
+<h3 style="
+  text-align: center;
+  font-size: 36px;
+  color: #413e66;
+  font-weight: 700;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 30px"
+  >Kode KBLI Usaha Anda</h3>
 
 <div class="containertable" style="margin: 0 auto;width:60%">
   <div class="row">
     <div class="col-12">
     <form id="acount-infor" method="post" action="<?php echo base_url('index.php/QNA/jawabKel'); ?>" class="acount-infor add-admin formkategori">  
-      <table class="table table-bordered table-stripped">
+      <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true" data-show-pagination-switch="true" data-show-refresh="true" data-key-events="true" data-show-toggle="true" data-resizable="true" data-cookie="true"
+                                                            data-cookie-id-table="saveId" data-show-export="true" data-click-to-select="true" data-toolbar="#toolbar">
         <thead class="thead-dark">
           <tr>
             <th scope="col">No</th>
@@ -80,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           ?>
         </tbody>
       </table>
-      <a href="<?php echo base_url('index.php/kbli/index'); ?>" class="btn btn-primary waves-effect waves-light float-right" type="submit"  style="color:white;">back</a>
+      <a style="margin: 20px; " href="<?php echo base_url('index.php/kbli/index'); ?>" class="btn btn-danger waves-effect waves-light float-right" type="submit"  style="color:white;">Kembali</a>
     </form>
     
     </div>
@@ -89,3 +115,65 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 </body>
 </html>
+<script src="<?php echo site_url('assets2/js/vendor/jquery-1.12.4.min.js') ?>"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/bootstrap.min.js') ?>"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/wow.min.js') ?>"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/jquery-price-slider.js') ?>"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/jquery.meanmenu.js') ?>"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/owl.carousel.min.js') ?>"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/jquery.sticky.js') ?>"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/jquery.scrollUp.min.js') ?>"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/scrollbar/jquery.mCustomScrollbar.concat.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/scrollbar/mCustomScrollbar-active.js') ?>"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/metisMenu/metisMenu.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/metisMenu/metisMenu-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/plugins.js') ?>"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/main.js') ?>"></script>
+    <!-- tawk chat JS
+        ============================================ -->
+        <!-- data table JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-table.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/tableExport.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/data-table-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-table-editable.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-editable.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-table-resizable.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/colResizable-1.5.source.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/data-table/bootstrap-table-export.js') ?>"></script>
+    <!--  editable JS
+		============================================ -->
+    <script src="<?php echo site_url('assets2/js/editable/jquery.mockjax.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/mock-active.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/select2.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/moment.min.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/bootstrap-datetimepicker.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/bootstrap-editable.js') ?>"></script>
+    <script src="<?php echo site_url('assets2/js/editable/xediable-active.js') ?>"></script>
+    <!-- Chart JS
+		============================================ -->
+    <script src="js/chart/jquery.peity.min.js"></script>
+    <script src="js/peity/peity-active.js"></script>
+    <!-- tab JS
+		============================================ -->
+    <script src="js/tab.js"></script>

@@ -10,6 +10,8 @@ class QNA extends CI_Controller{
 	}
  
 	function index(){
+		
+		$this->load->view('v_header');
 		$data['kategori'] = $this->m_kategori->viewK();
 		$this->load->view('v_jawabKategori',$data);
 	}
@@ -32,6 +34,7 @@ class QNA extends CI_Controller{
 				}
 			
 			$data['golPokok'] = $this->m_kategori->cariGolpok($where);
+			$this->load->view('v_header');	
 
 			$this->load->view('v_jawabGolPokok', $data);
 		}
@@ -55,7 +58,7 @@ class QNA extends CI_Controller{
 				}
 			
 			$data['gol'] = $this->m_kategori->cariGol($where);
-
+			$this->load->view('v_header');
 			$this->load->view('v_jawabGol', $data);
 		}
 	}
@@ -77,7 +80,7 @@ class QNA extends CI_Controller{
 				}
 			
 			$data['subGol'] = $this->m_kategori->cariSubgol($where);
-
+			$this->load->view('v_header');
 			$this->load->view('v_jawabSubGol', $data);
 		}
 	}
@@ -99,7 +102,7 @@ class QNA extends CI_Controller{
 				}
 			// echo $where;
 			$data['kel'] = $this->m_kategori->cariKel($where);
-
+			$this->load->view('v_header');
 			$this->load->view('v_jawabKel', $data);
 		}
 	}
@@ -121,7 +124,7 @@ class QNA extends CI_Controller{
 				}
 			// echo $where;
 			$data['kel'] = $this->m_kategori->cariKel($where);
-
+			$this->load->view('v_header');
 			$this->load->view('v_kesimpulan', $data);
 		}
 	}

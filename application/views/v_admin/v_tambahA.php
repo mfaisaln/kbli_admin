@@ -84,6 +84,17 @@
                                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                                         <form id="acount-infor" method="post" action="<?php echo base_url('index.php/Admin2/tambah'); ?>" class="acount-infor add-admin">
                                                             <div class="devit-card-custom">
+                                                                <?php
+                                                                    if($admin != ""){
+                                                                        echo"
+                                                                            <div class='alert alert-info fade in'>
+                                                                                Data sukses Di";
+                                                                        echo $admin;
+                                                                        echo"
+                                                                            </div>
+                                                                        ";
+                                                                    }
+                                                                ?>
                                                                 <div class="form-group">
                                                                     <input name="nama" type="text" class="form-control" placeholder="Full Name" required="">
                                                                 </div>
@@ -206,7 +217,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright-area">
+        <div class="footer-copyright-area" style="position:absolute; bottom:0px; height:60px; left:0px; right:0px; overflow:hidden;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

@@ -105,8 +105,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <li><a href="#about">Tentang KBLI</a></li>
           <li><a href="#services">Layanan Kami</a></li>
           <li><a href="#testimonials">Metode</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#footer">Contact Us</a></li>
+          <li><a href="#team">Tim</a></li>
+          <li><a href="#footer">Kontak</a></li>
           <li><a href="<?php echo base_url('index.php/login/index'); ?>"  >Admin</a></li>
         </ul>
       </nav><!-- .main-nav -->
@@ -121,11 +121,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="row justify-content-center align-self-center">
         <div class="col-md-6 intro-info order-md-first order-last">
           <h2>KBLI Solusi<br> <span>Untuk Usaha Anda!</span></h2>
+          <p style="text-align:justify">Klasifikasi Baku Lapangan Usaha di Indonesia yang digunakan untuk penyusunan klasifikasi bidang usaha yang ada di Indonesia yang disusun secara sistematis. </p>
+       
+          <p style="text-align:justify">Dasar Hukum KBLI adalah Peraturan Kepala BPS No. 19/2017 tentang Perubahan KBLI 2015. Gunakan ini untuk mempermudah kamu untuk mencari bidang usaha di OSS V 1.1 di 2020</p>
+
           <div>
             <a href="<?php echo base_url('index.php/QNA/index'); ?>" class="btn-get-started scrollto">Mulai Tes KBLI</a>
           </div>
         </div>
-  
+
         <div class="col-md-6 intro-img order-md-last order-first">
           <img src="<?php echo base_url('assets/img/intro-img.svg')?>" alt="" class="img-fluid">
         </div>
@@ -158,8 +162,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <ul>
                 <li><i class="ion-android-checkmark-circle"></i>Badan Pusat Statistik, 2015, “Klasifikasi Baku Lapangan Usaha Indonesia”, Jakarta, Badan Pusat Statistik.</li>
               </ul>
+            
+              <a style="margin-top: 20px; " href="<?php echo base_url('index.php/kbli/download'); ?>" class="btn btn-md btn-primary waves-effect waves-light " type="submit"  style="color:white;">UNDUH BUKU KBLI</a>
+
+             
             </div>
           </div>
+          
         </div>
       </div>
 
@@ -259,7 +268,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       
       <div class="container">
         <div class="section-header">
-          <h3>Team</h3>
+          <h3>Tim</h3>
         </div>
         <div class="row">
           
@@ -360,11 +369,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </div>
 
                   <div class="footer-newsletter">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem.</p>
-                    <form action="" method="post">
+                    <h4>Team KBLI ICM</h4>
+                    <p>Klasifikasi Baku Lapangan Usaha di Indonesia yang digunakan untuk penyusunan klasifikasi bidang usaha yang ada di Indonesia yang disusun secara sistematis. </p>
+                    <!-- <form action="" method="post">
                       <input type="email" name="email"><input type="submit"  value="Subscribe">
-                    </form>
+                    </form> -->
                   </div>
 
                 </div>
@@ -410,6 +419,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <h4>Kirim Pesan</h4>
               <p> Ada saran dan kritikan ? </strong> Berikan saran dan kritik kepada kami demi pengembangan yang lebih baik pada kolom dibawah ini. </p>
               <form method="post" action="<?php echo base_url('index.php/kbli/tambahpesan'); ?>" role="form" class="contactForm">
+                  <?php                                     
+                      if($saran1 == 1){
+                          echo"
+                              <div class='alert alert-danger fade in'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+                                  Saran Sukses dikirimkan
+                              </div>
+                          ";
+                      }
+                  ?>
+                  
                 <div class="form-group">
                   <input type="text" name="nama" class="form-control" id="name" placeholder="Your Name" required="">
                   

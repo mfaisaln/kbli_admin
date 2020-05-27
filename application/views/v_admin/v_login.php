@@ -9,14 +9,30 @@
 	<![endif]-->
 	<div class="error-pagewrap">
 		<div class="error-page-int">
+      
 			<div class="text-center m-b-md custom-login">
 				<h3>PLEASE LOGIN</h3>
-				<p>Login ini untuk masuk kedalama halaman Admin</p>
+				<p>Login ini untuk masuk kedalam halaman Admin</p>
 			</div>
 			<div class="content-error">
 				<div class="hpanel">
                     <div class="panel-body">
+                    
                         <form action="<?php echo base_url('index.php/login/aksi_login'); ?>" method="post" id="loginForm">
+                        
+                            <?php
+                              
+                              
+                              if($login == 0){
+                                  echo"
+                                    <div class='alert alert-danger fade in'>
+                                        Login Tidak Benar. Silakan coba lagi.
+                                    </div>
+                                  ";
+                              }
+                            ?>
+
+                            
                             <div class="form-group">
                                 <label class="control-label" for="username">Username</label>
                                 <input type="text" placeholder="example@gmail.com" title="Please enter you username" required="" value="" name="username" id="username" class="form-control">

@@ -26,10 +26,11 @@ class Login extends CI_Controller {
 	}
 	function index()
 	{
+		$Clogin['login'] = 1;
 		if($this->session->userdata('status') == "login"){
 			redirect(base_url('index.php/admin'));
 		}else{
-			$this->load->view('v_admin/v_login');
+			$this->load->view('v_admin/v_login',$Clogin);
 		}
 		
 	}
@@ -37,6 +38,7 @@ class Login extends CI_Controller {
 	function aksi_login(){
 		$username = $this->input->post('username');
 		$password = $this->input->post('password');
+		
 		$where = array(
 			'username' => $username,
 			'password' => md5($password)
@@ -53,7 +55,9 @@ class Login extends CI_Controller {
 			redirect(base_url("index.php/admin"));
  
 		}else{
-			echo "Username dan password salah !";
+			$Clogin['login'] = 0;
+			$this->load->view('v_admin/v_login',$Clogin);
+
 		}
 	}
 	function logout(){

@@ -12,11 +12,14 @@ class Saran extends CI_Controller{
 	}
  
 	function index(){
+		$Csaran['saran1'] = 0;
 		$data['saran'] = $this->m_pesan->view();
-		$this->load->view('v_admin/v_Saran',$data);
+		$this->load->view('v_admin/v_Saran',$data+$Csaran);
     }
     public function hapus($id){
-		$this->m_pesan->delete($id); // Panggil fungsi delete() yang ada di SiswaModel.php
-		redirect(base_url('index.php/Saran/index'));
+		$Csaran['saran1'] = 1;
+		$this->m_pesan->delete($id); 
+		$data['saran'] = $this->m_pesan->view();
+		$this->load->view('v_admin/v_Saran',$data+$Csaran);
 	}
 }

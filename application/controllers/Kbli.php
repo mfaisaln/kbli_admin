@@ -24,7 +24,8 @@ class Kbli extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('index');
+		$Csaran['saran1'] = 0;
+		$this->load->view('index',$Csaran);
 	}
 	function tambahpesan(){
 		// $kode_pesan=$this->input->post('kode_pesan');
@@ -40,6 +41,11 @@ class Kbli extends CI_Controller {
 			'pesan' => $pesan
 		);
 		$this->m_pesan->save('saran',$data); // Panggil fungsi save() yang ada di SiswaModel.php
-		redirect(base_url('index.php/Kategori'));
+		$Csaran['saran1'] = 1;
+		
 	 }
+	 function download()
+	{
+		force_download('assets/img/kbli-2017.pdf',NULL);
+	}
 }
